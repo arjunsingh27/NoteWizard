@@ -115,7 +115,7 @@ nav {
 .notes-box-main{
   padding: 2cm;
   height: 15cm;
-   background-image: url(img/Pencil.jpg);
+   background-image: url(/img/Pencil.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
