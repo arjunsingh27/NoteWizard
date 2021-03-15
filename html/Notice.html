@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>DCS COMPUTER SCIENCE</title>
+  </head>
+
+  <body>
+    <!-- HEADING OF THE WEBSITE -->
+    <section class="sec1">
+      <div class="top">
+        <h1 class="head">
+          DIPLOMA IN COMPUTER <strong class="red">SCIENCE</strong>
+        </h1>
+      </div>
+    </section>
+    <!-- NAVIGATION BAR  FOR THE WEBSITES -->
+    <nav class="navbar h-nav-resp" id="home">
+      <ul class="nav-list v-class-resp">
+        <div class="logo">NAVBAR</div>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/html/Notice.html">Notice</a></li>
+        <li><a href="/html/notes.html">Notes</a></li>
+        <li><a href="/img/TIMETABLE_CSE.pdf" target="_blank" download>TimeTable</a></li>
+        <li><a href="/html/about.html">About</a></li>
+        <li>
+          <a href="https://www.invertisuniversity.ac.in/" target="_blank">OFFICIAL WEBSITE</a></li>
+      </ul>
+      <!-- BUILDING OF HAMBURGER -->
+      <div class="burger" onclick="myFunction(this)">
+        <div class="line bar1"></div>
+        <div class="line bar2"></div>
+        <div class="line bar3"></div>
+      </div>
+    </nav>
+    <!-- CONTENT OF THE WEB SITE -->
+    <section class="sec2">
+      <div class="box-main">
+        <div class="left-part">
+          <h3>NOTICES</h3>
+          <p id="first-p">
+            Mask and sanitizer is compulsory to enter university campus. There will be random checking and if students are found without a mask or sanitizer, necessary action (such as a fine of 500/- or ID punch) will be taken.
+          </p>
+        </div>
+        <div class="img-notice">
+          <img class="img" src="/img/cs.png" alt="img" />
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="red" id="services">
+      <p class="text-footer background">
+        copyright &copy; 2021 -ALL RIGHT RESERVE
+      </p>
+    </footer>
+    <!-- transition for hamburger -->
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+  </body>
+  <script src="../script.js"></script>
+</html>
