@@ -242,7 +242,7 @@ background-image: url(../img/Aanbalup.jpg) ;
 
 }
 .bg{
-  background-image: url(img/sunset.jpg);
+  background-image: url(../img/sunset.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
