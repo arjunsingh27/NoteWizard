@@ -115,7 +115,7 @@ nav {
 .notes-box-main{
   padding: 2cm;
   height: 15cm;
-   background-image: url(img/Pencil.jpg);
+   background-image: url(../img/Pencil.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -233,7 +233,7 @@ margin-bottom: 30px;
   background-color: gray;
 }
 .covid{
-background-image: url(img/Aanbalup.jpg) ;
+background-image: url(../img/Aanbalup.jpg) ;
  
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
@@ -258,7 +258,7 @@ background-image: url(img/Aanbalup.jpg) ;
   width: 20vw;
 
   /* background-image: url(img/Book.jpg); */
-  background: url(img/clock4.png);
+  background: url(../img/clock4.png);
   /* background: url(/img/clock3.mp4); */
   background-size: 100%;
   border-radius: 50%;
@@ -297,7 +297,7 @@ background-image: url(img/Aanbalup.jpg) ;
 }
 /* fourth semeseter table */
 .fourth-bg{
-  background: url(img/Aanbalup.jpg);
+  background: url(../img/Aanbalup.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
