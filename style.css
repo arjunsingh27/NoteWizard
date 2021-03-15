@@ -1,0 +1,333 @@
+/* IMPORTING THE GOOGLE FONT FROM THE NET */
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Monoton&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+/* INTIALIZING MAGIN PADDING 0 THAT WE COULD GET ERROR FREE INVIROMENT */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* HEADING OF THE WEBSITES */
+.top {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: black;
+  height: 100px;
+  cursor: pointer;
+  margin: auto;
+}
+/* CREATED A CLASS FOR RED COLOR */
+.red {
+  color: red;
+}
+
+h1 {
+  padding: 25px;
+  /* font-family: 'Luckiest Guy', cursive; */
+  font-family: "Acme", sans-serif;
+  word-spacing: 10px;
+}
+h3 {
+  font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+  /* -webkit-user-select: none; */
+  cursor: pointer;
+
+}
+h4 {
+  animation: blinking 5s ;
+  font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(252, 77, 24);
+  /* cursor: pointer; */
+  /* -webkit-user-select: none; */
+}
+@keyframes blinking {
+  25%  {color: yellow;}
+  50%  {color: rgb(17, 17, 17);}
+  0%   {color: red;}
+  100% {color: rgb(233, 8, 83);}
+}
+/* SETTING NAVIGATION BAR */
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+/* SETTING NAVIGATION BAR */
+.navbar {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  cursor: pointer;
+  background-color: red;
+}
+/* FORMATTING THE PAGES LINK IN NAV BAR */
+.nav-list {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  /* font-family: 'Sacramento', cursive; */
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(13, 226, 245);
+}
+.nav-list li {
+  list-style: none;
+  padding: 26px 30px;
+}
+.nav-list li a {
+  text-decoration: none;
+  font-size: 20px;
+  /* font-family: 'Sacramento', cursive; */
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+}
+/* TURNING COLOR OF WORD IF ANY BODY HOVER  */
+.nav-list li a:hover {
+  color: gray;
+}
+/* SETTING CONTENT OF THE WEBSITES ========SEC2 */
+.box-main {
+  padding: 2cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 100%;
+  margin: auto;
+  height: 15cm;
+}
+
+
+
+
+.notes-box-main{
+  padding: 2cm;
+  height: 15cm;
+   background-image: url(/img/Pencil.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   /* -webkit-transform: scaleX(-1); */
+}
+.notes-ul li{
+  list-style: none;
+  padding: 20px;
+
+}
+.notes-ul li a{
+  
+  text-decoration: none;
+  color: black;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 30px;
+  padding: 10px;
+  border:2px solid black;
+  border-radius: 50px;
+
+
+}
+.notes-ul li a:hover{
+  
+  color: rgb(160, 11, 11);
+}
+
+/* LEFT PART OF THE BOX-MAIN IN SEC2 */
+.left-part {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+
+/* FORMATING FONT OF SEC2 LEFT-SIDE PARAGRAPH */
+#first-p {
+  font-size: 30px;
+  font-family: "Luckiest Guy", cursive;
+  /* -webkit-user-select: none; */
+  color: rgb(34, 34, 32);
+}
+
+
+/* EDITING IMAGE IN BOX MAIN */
+.img {
+  max-width: 200px;
+  border: 4px solid white;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+/* setting back ground  */
+.background {
+  background: rgba(0, 0, 0, 7);
+
+  /* background-image: url("https://arjunsingh27.github.io/e-learning.github.io/img/bg1.jpg") cover center ; */
+
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+/* footer formatting */
+.text-footer {
+  text-align: center;
+  padding: 20px;
+}
+/* setting hamburger */
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 20px;
+}
+
+/* .line {
+  width: 60px;
+  background-color: rgb(7, 7, 7);
+  height: 7px;
+  margin: 4px 4px;
+} */
+/* lines of ham burger */
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+/* transition in hamburger */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+/* rotaing of hamburger lines */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/* .img-notice img{
+width: 250px;
+height: 100px;
+border-radius: 0;
+margin-bottom: 30px;
+} */
+/* setting background color of section */
+.sec1 {
+  background-color: gray;
+}
+.covid{
+background-image: url(/img/Aanbalup.jpg) ;
+ 
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+.bg{
+  background-image: url(/img/sunset.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sec2 {
+  background-color: rgb(119, 148, 153);
+}
+/* clock  */
+#clockcontainer {
+  position: relative;
+  margin: auto;
+  height: 20vw;
+  width: 20vw;
+
+  background-image: url(img/Book.jpg);
+  background: url(/img/clock4.png);
+  /* background: url(/img/clock3.mp4); */
+  background-size: 100%;
+  border-radius: 50%;
+  /* background-color:rgb(250, 33, 4); */
+}
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background: rgb(10, 1, 1);
+  border-radius: 2px;
+  transform-origin: bottom;
+}
+
+#hour {
+  width: 1.8%;
+  height: 20%;
+  top: 30%;
+  left: 49.2%;
+  opacity: 0.8;
+}
+#minute {
+  width: 1.1%;
+  height: 26%;
+  top: 24%;
+  left: 49.4%;
+  opacity: 0.8;
+}
+
+#second {
+  width: 1%;
+  height: 32%;
+  top: 18%;
+  left: 49.4%;
+  opacity: 0.8;
+}
+/* fourth semeseter table */
+.fourth-bg{
+  background: url(/img/Aanbalup.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-center{
+  text-align: center;
+
+}
+table, th, td {
+  border: 2px solid black;
+   border-collapse: collapse;
+   font-size: 20px;
+  font-family: "Luckiest Guy", cursive;
+  /* -webkit-user-select: none; */
+  color: rgb(0, 0, 0);
+}
+.fouth-notes{
+  padding: 2cm;
+  height: 20cm;
+} 
+table tbody tr td a {
+text-decoration: none;
+color: rgb(36, 35, 35);
+
+}
+table tbody tr td a:hover{
+   
+  color: rgb(141, 137, 137);
+  }
+
+
+
+
