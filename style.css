@@ -154,6 +154,7 @@ nav {
 }
 .notes-sem{
   text-align: center;
+  padding: 2vh;
   
 }
 
@@ -389,6 +390,7 @@ table, th, td {
 
 #fourthsemester {
   text-align: center;
+  padding: 2vh;
 }
 
 .table-title {
