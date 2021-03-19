@@ -355,12 +355,12 @@ text-align: center;
  
 }
 
-.fourth-bg {
+/* .fourth-bg {
   background: url(img/paper.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .text-center {
   text-align: center;
@@ -391,25 +391,42 @@ table, th, td {
 #fourthsemester {
   text-align: center;
   padding: 2vh;
+   
 }
 
 .table-title {
+  display: block;
   font-size: 3.5vh;
   font-family: "Luckiest Guy", cursive;
+  padding: 3vh;
+  color: #007bffaf;
+  cursor: pointer;
+}
+.table-title:hover{
+  color: #007bfffd;
 }
 .btn{
      
     display: inline-block;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #007bff;   
+    color: rgba(255, 255, 255, 0.734);
+    font-family: "Luckiest Guy", cursive;
+    background-color: #007bffcb;   
     margin: .5vh;
     padding: .5vh;
     border-radius: 150px;
+    outline: none;
     width: 90%;
-    transition-duration: 0.4s;
+    border-radius: 15px;
+    box-shadow: 0 0.5vh #999;
+    cursor: pointer;
 }
-
+.btn:hover{
+  background-color: #007bff; 
+  color: rgb(255, 255, 255);
+}
+.btn:active{
+  transform: translateY(4px);
+}
 table tbody tr td a {
   text-decoration: none;
   color: rgb(4, 181, 252);
