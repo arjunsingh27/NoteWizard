@@ -138,7 +138,7 @@ nav {
 }
 
 .notes-box-main {
-  padding:0.5vh;
+  padding: 0.5vh;
   height: 15cm;
   background-image: url(img/Pencil.jpg);
   background-color: rgb(243, 239, 26);
@@ -152,10 +152,10 @@ nav {
   list-style: none;
   padding: 2.5vh;
 }
-.notes-sem{
+
+.notes-sem {
   text-align: center;
   padding: 2vh;
-  
 }
 
 .notes-ul li a {
@@ -164,7 +164,7 @@ nav {
   font-family: "Luckiest Guy", cursive;
   font-size: 3vh;
   padding: 1.2vh;
-  border:2px solid black;
+  border: 2px solid black;
   border-radius: 50px;
 }
 
@@ -349,10 +349,10 @@ margin-bottom: 30px;
 .bggray {
   background-color: rgba(12, 228, 243, 0.137);
 }
-.thbold{
-font-size: 3.5vh;
-text-align: center;
- 
+
+.thbold {
+  font-size: 3.5vh;
+  text-align: center;
 }
 
 /* .fourth-bg {
@@ -365,11 +365,13 @@ text-align: center;
 .text-center {
   text-align: center;
 }
-.s-width{
-width: 15%;
+
+.s-width {
+  width: 15%;
 }
-.n-width{
-width: 15%;
+
+.n-width {
+  width: 15%;
 }
 
 table, th, td {
@@ -391,7 +393,6 @@ table, th, td {
 #fourthsemester {
   text-align: center;
   padding: 2vh;
-   
 }
 
 .table-title {
@@ -402,31 +403,34 @@ table, th, td {
   color: #007bffaf;
   cursor: pointer;
 }
-.table-title:hover{
+
+.table-title:hover {
   color: #007bfffd;
 }
-.btn{
-     
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.734);
-    font-family: "Luckiest Guy", cursive;
-    background-color: #007bffcb;   
-    margin: .5vh;
-    padding: .5vh;
-    border-radius: 150px;
-    outline: none;
-    width: 90%;
-    border-radius: 15px;
-    box-shadow: 0 0.5vh #999;
-    cursor: pointer;
+
+.btn {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.734);
+  font-family: "Luckiest Guy", cursive;
+  background-color: #007bffcb;
+  margin: .5vh;
+  padding: .5vh;
+  border-radius: 150px;
+  outline: none;
+  width: 90%;
+  box-shadow: 0 0.5vh #999;
+  cursor: pointer;
 }
-.btn:hover{
-  background-color: #007bff; 
+
+.btn:hover {
+  background-color: #007bff;
   color: rgb(255, 255, 255);
 }
-.btn:active{
+
+.btn:active {
   transform: translateY(4px);
 }
+
 table tbody tr td a {
   text-decoration: none;
   color: rgb(4, 181, 252);
@@ -438,8 +442,10 @@ table tbody tr td a {
 table tbody tr td a:hover {
   color: rgb(141, 137, 137);
 }
+
 /* notice */
-.notice-bg{
+
+.notice-bg {
   background-image: url(img/Aanbalup.jpg);
   background-color: #cccccc;
   /* Used if the image is unavailable */
@@ -449,4 +455,16 @@ table tbody tr td a:hover {
   /* Do not repeat the image */
   background-size: cover;
   /* Resize the background image to cover the entire container */
+}
+
+/* time table */
+.time-table-box-main{
+ margin: 10px;
+ background-color: white;
+
+}
+ 
+iframe{
+  height: 90vh;
+  width: 100%;
 }
