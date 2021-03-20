@@ -18,8 +18,9 @@
   .h-nav-resp {
     height: 80px;
   }
-  .v-class-resp {
+  .v-class-resp{
     opacity: 0%;
+    pointer-events: none;
   }
   #first-p {
     font-size: 20px;
