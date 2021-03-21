@@ -423,7 +423,9 @@ td {
     text-align: center;
     padding: 2vh;
 }
-
+.text-center{
+    text-align: center;
+}
 .table-title {
     display: block;
     font-size: 3.5vh;
