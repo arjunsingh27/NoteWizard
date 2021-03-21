@@ -58,4 +58,8 @@
     .fouth-notes {
         padding: 10px;
     }
+    .thbold {
+        font-size: 2vh;
+        text-align: center;
+    }
 }
