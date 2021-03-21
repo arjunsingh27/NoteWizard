@@ -1,92 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
-    <title>DCS COMPUTER SCIENCE</title>
-  </head>
+    <title>About</title>
+</head>
 
-  <body>
+<body>
     <!-- HEADING OF THE WEBSITE -->
     <section class="sec1">
-      <div class="top">
-        <h1 class="head">
-          DIPLOMA IN COMPUTER <strong class="red">SCIENCE</strong>
-        </h1>
-      </div>
+        <div class="top">
+            <h1 class="head">
+                DIPLOMA IN COMPUTER <strong class="red">SCIENCE</strong>
+            </h1>
+        </div>
     </section>
     <!-- NAVIGATION BAR  FOR THE WEBSITES -->
     <nav class="navbar h-nav-resp" id="home">
-      <ul class="nav-list v-class-resp">
-        <div class="logo">NAVBAR</div>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="Notice.html">Notice</a></li>
-        <li><a href="notes.html">Notes</a></li>
-        <li><a href="timetable.html">TimeTable</a></li>
-        <li><a href="about.html">About</a></li>
-        <li>
-          <a href="https://www.invertisuniversity.ac.in/" target="_blank"
-            >OFFICIAL WEBSITE</a
-          >
-        </li>
-      </ul>
-      <!-- BUILDING OF HAMBURGER -->
-      <div class="burger" onclick="myFunction(this)">
-        <div class="line bar1"></div>
-        <div class="line bar2"></div>
-        <div class="line bar3"></div>
-      </div>
+        <ul class="nav-list v-class-resp">
+            <div class="logo">NAVBAR</div>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Notice.html">Notice</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="timetable.html">TimeTable</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+        <!-- BUILDING OF HAMBURGER -->
+        <div class="burger" onclick="myFunction(this)">
+            <div class="line bar1"></div>
+            <div class="line bar2"></div>
+            <div class="line bar3"></div>
+        </div>
     </nav>
     <!-- CONTENT OF THE WEB SITE -->
 
     <section class="sec2 bg">
-      <div class="box-main">
-        <div class="left-part">
-          <h4>TIME</h4>
-          <p id="first-p">
-            Time is free, but it’s priceless. You can’t own it, but you can use it. You can’t keep it, but you can 
-            spend it. Once you’ve lost it you can never get it back
-          </p>
+        <div class="box-main">
+            <div class="left-part">
+                <h4>TIME</h4>
+                <p id="first-p">
+                    Time is free, but it’s priceless. You can’t own it, but you can use it. You can’t keep it, but you can spend it. Once you’ve lost it you can never get it back
+                </p>
+            </div>
+            <div class="right-part">
+                <div id="clockcontainer">
+                    <div id="hour"></div>
+                    <div id="minute"></div>
+                    <div id="second"></div>
+                </div>
+                <script>
+                    setInterval(() => {
+                        d = new Date();
+                        htime = d.getHours();
+                        mtime = d.getMinutes();
+                        stime = d.getSeconds();
+                        hrotation = 30 * htime + mtime / 2;
+                        mrotation = 6 * mtime;
+                        srotation = 6 * stime;
+                        hour.style.transform = `rotate(${hrotation}deg)`;
+                        minute.style.transform = `rotate(${mrotation}deg)`;
+                        second.style.transform = `rotate(${srotation}deg)`;
+                    }, 1000);
+                </script>
+            </div>
         </div>
-        <div class="right-part">
-          <div id="clockcontainer">
-            <div id="hour"></div>
-            <div id="minute"></div>
-            <div id="second"></div>
-          </div>
-          <script>
-            setInterval(() => {
-              d = new Date();
-              htime = d.getHours();
-              mtime = d.getMinutes();
-              stime = d.getSeconds();
-              hrotation = 30 * htime + mtime / 2;
-              mrotation = 6 * mtime;
-              srotation = 6 * stime;
-              hour.style.transform = `rotate(${hrotation}deg)`;
-              minute.style.transform = `rotate(${mrotation}deg)`;
-              second.style.transform = `rotate(${srotation}deg)`;
-            }, 1000);
-          </script>
-        </div>
-      </div>
     </section>
     <!-- footer -->
     <footer class="red" id="services">
-      <p class="text-footer background">
-        copyright &copy; 2021 -ALL RIGHT RESERVE
-      </p>
+        <p class="text-footer background">
+            copyright &copy; 2021 -ALL RIGHT RESERVE
+        </p>
     </footer>
     <!-- transition for hamburger -->
     <script>
-      function myFunction(x) {
-        x.classList.toggle("change");
-      }
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
     </script>
-  </body>
-  <script src="../script.js"></script>
+</body>
+<script src="../script.js"></script>
+
 </html>
