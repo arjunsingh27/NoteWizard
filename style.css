@@ -30,7 +30,7 @@
 /* CREATED A CLASS FOR RED COLOR */
 
 .red {
-    color: red;
+    color: rgba(255, 0, 0, 0.925);
 }
 
 h1 {
