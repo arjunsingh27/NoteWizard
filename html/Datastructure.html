@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+  
+      .space {
+        height: 500px;
+      }
+  
+      .one {
+  
+        padding: 2cm;
+        border: 2px solid black;
+        border-spacing: 2cm;
+      }
+  
+      h1 {
+        text-align: center;
+      }
+  
+  
+      #myInput {
+        background-image: url(/img/search.png);
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+  
+      }
+  
+      #myTable {
+        
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid rgb(22, 22, 22);
+        font-size: 18px;
+      }
+  
+      #myTable th,
+      #myTable td {
+        text-align: left;
+        padding: 12px;
+        border-color: black;
+      }
+  
+      #myTable tr {
+        border-bottom: 1px solid #ddd;
+      }
+  
+      #myTable tr.header,
+      #myTable tr:hover {
+        background-color: #f1f1f1;
+      }
+  
+      td a {
+        text-decoration: none;
+        color: rgb(30, 179, 238);
+      }
+      #solution{
+        text-align: center;
+
+      }
+      .sectiontwo{
+        padding: 5vh;
+      }
+      .sectionthree{
+    border: 2px solid black;
+    padding: 2.4vh;
+      }
+    </style>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+   
+    <title>Code Viewer</title>
+</head>
+
+<body>
+    <!-- HEADING OF THE WEBSITE -->
+    <section class="sec1">
+        <div class="top">
+            <h1 class="head">
+                DIPLOMA IN COMPUTER <strong class="red">SCIENCE</strong>
+            </h1>
+        </div>
+    </section>
+    <!-- NAVIGATION BAR  FOR THE WEBSITES -->
+    <nav class="navbar h-nav-resp" id="home">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">NAVBAR</div>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Notice.html">Notice</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="timetable.html">TimeTable</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+        <!-- BUILDING OF HAMBURGER -->
+        <div class="burger" onclick="myFunction(this)">
+            <div class="line bar1"></div>
+            <div class="line bar2"></div>
+            <div class="line bar3"></div>
+        </div>
+    </nav>
+    <section class="sectiontwo">
+   <h1 id="Solution">Solution</h1>
+
+  <input type="text" id="myInput" onkeyup="myFunctions()" placeholder="Search for names.." title="Type in a name">
+
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:60%;">Name</th>
+      <th style="width:40%;">Download</th>
+    </tr>
+    <tr>
+      <td>Addition of Matrices</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td> Multiplication of Matrices</td>
+      <td><a href="#MultiplicationofMatrices">View</a></td>
+    </tr>
+    <tr>
+      <td>Transpose of Matrix</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td>Reverse an input string</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td>Binary Search</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td>Bubble Sort</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td>Insertion sort</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td>Quick Sort</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td>Stack Using Array</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td>Queue Using Array</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td>Stack Using Single Linked List</td>
+      <td><a href="">View</a></td>
+    </tr>
+    <tr>
+      <td>Postfix Expression Evaluation</td>
+      <td><a href="">View</a></td>
+    </tr>
+  </table>
+
+  <script>
+    function myFunctions() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+
+  <div class="space">
+
+  </div>
+  <section class="sectionthree" id="MultiplicationofMatrices">
+    <h1>Multiplication of Matrices</h1>
+    <code>
+ <br>#include&lt;stdio.h&gt;    
+ <br>#include&lt;stdlib.h&gt;
+ <br>int main(){  
+ <br>int a[10][10],b[10][10],mul[10][10],r,c,i,j,k;    
+ <br>system(&quot;cls&quot;);  
+ <br>printf(&quot;enter the number of row=&quot;);    
+ <br>scanf(&quot;%d&quot;,&amp;r);    
+ <br>printf(&quot;enter the number of column=&quot;);    
+ <br>scanf(&quot;%d&quot;,&amp;c);    
+ <br>printf(&quot;enter the first matrix element=\n&quot;);    
+ <br>for(i=0;i&lt;r;i++)    
+ <br>{    
+ <br>for(j=0;j&lt;c;j++)    
+ <br>{    
+ <br>scanf(&quot;%d&quot;,&amp;a[i][j]);    
+ <br>}    
+ <br>}    
+ <br>printf(&quot;enter the second matrix element=\n&quot;);    
+ <br>for(i=0;i&lt;r;i++)    
+ <br>{    
+ <br>for(j=0;j&lt;c;j++)    
+ <br>{    
+ <br>scanf(&quot;%d&quot;,&amp;b[i][j]);    
+ <br>}    
+ <br>}       
+ <br>printf(&quot;multiply of the matrix=\n&quot;);    
+ <br>for(i=0;i&lt;r;i++)    
+ <br>{    
+ <br>for(j=0;j&lt;c;j++)    
+ <br>{    
+ <br>mul[i][j]=0;    
+ <br>for(k=0;k&lt;c;k++)    
+ <br>{    
+ <br>mul[i][j]+=a[i][k]*b[k][j];    
+ <br>}    
+ <br>}    
+ <br>}    
+ <br>//for printing result    
+ <br>for(i=0;i&lt;r;i++)    
+ <br>{    
+ <br>for(j=0;j&lt;c;j++)    
+ <br>{    
+ <br>printf(&quot;%d\t&quot;,mul[i][j]);    
+ <br>}    
+ <br>printf(&quot;\n&quot;);    
+ <br>}    
+ <br>return 0;  
+ <br>}  
+ </code>
+  </section>
+</section>
+<footer class="red" id="services">
+  <p class="text-footer background">
+      copyright &copy; 2021 -ALL RIGHT RESERVE
+  </p>
+</footer>
+<!-- transition for hamburger -->
+<script>
+  function myFunction(x) {
+      x.classList.toggle("change");
+  }
+</script>
+</body>
+<script src="../script.js"></script>
+</html>
+ 
