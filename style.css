@@ -98,7 +98,6 @@ nav {
 /* FORMATTING THE PAGES LINK IN NAV BAR */
 
 .nav-list {
-    width: 70%;
     display: flex;
     align-items: center;
 }
