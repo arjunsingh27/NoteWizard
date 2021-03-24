@@ -2,266 +2,983 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-  
-      .space {
-        height: 500px;
-      }
-  
-      .one {
-  
-        padding: 2cm;
-        border: 2px solid black;
-        border-spacing: 2cm;
-      }
-  
-      h1 {
-        text-align: center;
-      }
-  
-  
-      #myInput {
-        background-image: url(/img/search.png);
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        width: 100%;
-        font-size: 16px;
-        padding: 12px 20px 12px 40px;
-        border: 1px solid #ddd;
-        margin-bottom: 12px;
-  
-      }
-  
-      #myTable {
-        
-        border-collapse: collapse;
-        width: 100%;
-        border: 1px solid rgb(22, 22, 22);
-        font-size: 18px;
-      }
-  
-      #myTable th,
-      #myTable td {
-        text-align: left;
-        padding: 12px;
-        border-color: black;
-      }
-  
-      #myTable tr {
-        border-bottom: 1px solid #ddd;
-      }
-  
-      #myTable tr.header,
-      #myTable tr:hover {
-        background-color: #f1f1f1;
-      }
-  
-      td a {
-        text-decoration: none;
-        color: rgb(30, 179, 238);
-      }
-      #solution{
-        text-align: center;
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      }
-      .sectiontwo{
-        padding: 5vh;
-      }
-      .sectionthree{
-    border: 2px solid black;
-    padding: 2.4vh;
-      }
-    </style>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
-   
-    <title>Code Viewer</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+
+  <title>Search Code</title>
 </head>
 
 <body>
-    <!-- HEADING OF THE WEBSITE -->
-    <section class="sec1">
-        <div class="top">
-            <h1 class="head">
-                DIPLOMA IN COMPUTER <strong class="red">SCIENCE</strong>
-            </h1>
-        </div>
-    </section>
-    <!-- NAVIGATION BAR  FOR THE WEBSITES -->
-    <nav class="navbar h-nav-resp" id="home">
-        <ul class="nav-list v-class-resp">
-            <div class="logo">NAVBAR</div>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="Notice.html">Notice</a></li>
-            <li><a href="notes.html">Notes</a></li>
-            <li><a href="timetable.html">TimeTable</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contactus.html">CONTACT US</a></li>
-        </ul>
-        <!-- BUILDING OF HAMBURGER -->
-        <div class="burger" onclick="myFunction(this)">
-            <div class="line bar1"></div>
-            <div class="line bar2"></div>
-            <div class="line bar3"></div>
-        </div>
-    </nav>
-    <section class="sectiontwo">
-   <h1 id="Solution">Solution</h1>
+  <!-- HEADING OF THE WEBSITE -->
+  
+  <!-- NAVIGATION BAR  FOR THE WEBSITES -->
+  <nav class="navbar h-nav-resp" id="home">
+    <ul class="nav-list v-class-resp">
+      <div class="logo">NAVBAR</div>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="Notice.html">Notice</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="timetable.html">TimeTable</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contactus.html">CONTACT US</a></li>
+    </ul>
+    <!-- BUILDING OF HAMBURGER -->
+    <div class="burger" onclick="myFunction(this)">
+      <div class="line bar1"></div>
+      <div class="line bar2"></div>
+      <div class="line bar3"></div>
+    </div>
+  </nav>
+  <style>
+    .button{
+     background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.go-top{
+  align-items: right;
+  position: fixed;
+}
+  </style>
+  <div class="go-top" id="top-up">
+    <a href="#myInput"><button class="button">G0-UP</button></a> 
+  </div>
+  <section class="sectiontwo">
+    <h1 id="Solution">Solution</h1>
 
-  <input type="text" id="myInput" onkeyup="myFunctions()" placeholder="Search for names.." title="Type in a name">
+    <input type="text" id="myInput" onkeyup="myFunctions()" placeholder="Search for names.." title="Type in a name">
 
-  <table id="myTable">
-    <tr class="header">
-      <th style="width:60%;">Name</th>
-      <th style="width:40%;">Download</th>
-    </tr>
-    <tr>
-      <td>Addition of Matrices</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td> Multiplication of Matrices</td>
-      <td><a href="#MultiplicationofMatrices">View</a></td>
-    </tr>
-    <tr>
-      <td>Transpose of Matrix</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td>Reverse an input string</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td>Binary Search</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td>Bubble Sort</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td>Insertion sort</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td>Quick Sort</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td>Stack Using Array</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td>Queue Using Array</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td>Stack Using Single Linked List</td>
-      <td><a href="">View</a></td>
-    </tr>
-    <tr>
-      <td>Postfix Expression Evaluation</td>
-      <td><a href="">View</a></td>
-    </tr>
-  </table>
+    <table id="myTable">
+      <tr class="header">
+        <th style="width:80%;">Name</th>
+        <th style="width:20%;" class="View-code">Redirect</th>
+      </tr>
+      <tr>
+        <td>Addition of Matrices</td>
+        <td><a href="#AdditionofMatrices"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td> Multiplication of Matrices</td>
+        <td><a href="#MultiplicationofMatrices"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Transpose of Matrix</td>
+        <td><a href="#TransposeofMatrix"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Reverse an input string</td>
+        <td><a href="#Reverseaninputstring"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Binary Search</td>
+        <td><a href="#BinarySearch"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Bubble Sort</td>
+        <td><a href="#BubbleSort"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Insertion sort</td>
+        <td><a href="#Insertion sort"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Quick Sort</td>
+        <td><a href="#QuickSort"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Stack Using Array</td>
+        <td><a href="#StackUsingArray"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Queue Using Array</td>
+        <td><a href="#QueueUsingArray"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Stack Using Single Linked List</td>
+        <td><a href="#StackUsingSingleLinkedList"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+      <tr>
+        <td>Postfix Expression Evaluation</td>
+        <td><a href="#PostfixExpressionEvaluation"><button type="btn" class="btn">Redirect</button></a></td>
+      </tr>
+    </table>
 
-  <script>
-    function myFunctions() {
-      var input, filter, table, tr, td, i, txtValue;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      table = document.getElementById("myTable");
-      tr = table.getElementsByTagName("tr");
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-          txtValue = td.textContent || td.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
+    <script>
+      function myFunctions() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
           }
         }
       }
+    </script>
+
+    <div class="space">
+
+    </div>
+    <section class="sectionthree" id="AdditionofMatrices">
+      <h1>Addition of Matrices</h1>
+      <code>
+    <div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #FF0000; background-color: #FFAAAA">#</span>include <span style="color: #333333">&lt;</span>stdio.h<span style="color: #333333">&gt;</span>
+<span style="color: #557799">#define N 4</span>
+
+<span style="color: #888888">// This function adds A[][] and B[][], and stores</span>
+<span style="color: #888888">// the result in C[][]</span>
+<span style="color: #333399; font-weight: bold">void</span> add(<span style="color: #333399; font-weight: bold">int</span> A[][N], <span style="color: #333399; font-weight: bold">int</span> B[][N], <span style="color: #333399; font-weight: bold">int</span> C[][N])
+{
+	<span style="color: #333399; font-weight: bold">int</span> i, j;
+	<span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> N; i<span style="color: #333333">++</span>)
+		<span style="color: #008800; font-weight: bold">for</span> (j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;</span> N; j<span style="color: #333333">++</span>)
+			C[i][j] <span style="color: #333333">=</span> A[i][j] <span style="color: #333333">+</span> B[i][j];
+}
+
+<span style="color: #333399; font-weight: bold">int</span> main()
+{
+	<span style="color: #333399; font-weight: bold">int</span> A[N][N] <span style="color: #333333">=</span> { {<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>},
+					{<span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>},
+					{<span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>},
+					{<span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>}};
+
+	<span style="color: #333399; font-weight: bold">int</span> B[N][N] <span style="color: #333333">=</span> { {<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>},
+					{<span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>},
+					{<span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>},
+					{<span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>}};
+
+	<span style="color: #333399; font-weight: bold">int</span> C[N][N]; <span style="color: #888888">// To store result</span>
+	<span style="color: #333399; font-weight: bold">int</span> i, j;
+	add(A, B, C);
+
+	printf(<span style="background-color: #fff0f0">&quot;Result matrix is </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+	<span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> N; i<span style="color: #333333">++</span>)
+	{
+		<span style="color: #008800; font-weight: bold">for</span> (j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;</span> N; j<span style="color: #333333">++</span>)
+		printf(<span style="background-color: #fff0f0">&quot;%d &quot;</span>, C[i][j]);
+		printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+	}
+
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>
+
+    </code>
+    </section>
+
+    <div class="space">
+
+    </div>
+    <section class="sectionthree" id="MultiplicationofMatrices">
+      <h1>Multiplication of Matrices</h1>
+      <code>
+<div style="background: #ffffff; overflow:auto;width:auto"><pre style="margin: 0; line-height: 125%">  <span style="color: #888888">// C program to multiply two square matrices.</span>
+  <span style="color: #557799">#include &lt;stdio.h&gt;</span>
+  <span style="color: #557799">#define N 4</span>
+  
+  <span style="color: #888888">// This function multiplies mat1[][] and mat2[][],</span>
+  <span style="color: #888888">// and stores the result in res[][]</span>
+  <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">multiply</span>(<span style="color: #333399; font-weight: bold">int</span> mat1[][N], <span style="color: #333399; font-weight: bold">int</span> mat2[][N], <span style="color: #333399; font-weight: bold">int</span> res[][N])
+  {
+    <span style="color: #333399; font-weight: bold">int</span> i, j, k;
+    <span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> N; i<span style="color: #333333">++</span>) {
+      <span style="color: #008800; font-weight: bold">for</span> (j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;</span> N; j<span style="color: #333333">++</span>) {
+        res[i][j] <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+        <span style="color: #008800; font-weight: bold">for</span> (k <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; k <span style="color: #333333">&lt;</span> N; k<span style="color: #333333">++</span>)
+          res[i][j] <span style="color: #333333">+=</span> mat1[i][k] <span style="color: #333333">*</span> mat2[k][j];
+      }
+    }
+  }
+  
+  <span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+  {
+    <span style="color: #333399; font-weight: bold">int</span> mat1[N][N] <span style="color: #333333">=</span> { { <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span> },
+            { <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span> },
+            { <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span> },
+            { <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span> } };
+  
+    <span style="color: #333399; font-weight: bold">int</span> mat2[N][N] <span style="color: #333333">=</span> { { <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span> },
+            { <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span> },
+            { <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span> },
+            { <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span> } };
+  
+    <span style="color: #333399; font-weight: bold">int</span> res[N][N]; <span style="color: #888888">// To store result</span>
+    <span style="color: #333399; font-weight: bold">int</span> i, j;
+    multiply(mat1, mat2, res);
+  
+    printf(<span style="background-color: #fff0f0">&quot;Result matrix is </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+    <span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> N; i<span style="color: #333333">++</span>) {
+      <span style="color: #008800; font-weight: bold">for</span> (j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;</span> N; j<span style="color: #333333">++</span>)
+        printf(<span style="background-color: #fff0f0">&quot;%d &quot;</span>, res[i][j]);
+      printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+    }
+  
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+  }
+  </pre></div>
+  
+ </code>
+    </section>
+    <div class="space">
+    </div>
+    <section class="sectionthree" id="TransposeofMatrix">
+      <h1>Transpose of Matrix</h1>
+      <code>
+        <div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #FF0000; background-color: #FFAAAA">#</span>include <span style="color: #333333">&lt;</span>stdio.h<span style="color: #333333">&gt;</span>
+<span style="color: #557799">#define N 4</span>
+
+<span style="color: #888888">// This function stores transpose of A[][] in B[][]</span>
+<span style="color: #333399; font-weight: bold">void</span> transpose(<span style="color: #333399; font-weight: bold">int</span> A[][N], <span style="color: #333399; font-weight: bold">int</span> B[][N])
+{
+	<span style="color: #333399; font-weight: bold">int</span> i, j;
+	<span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> N; i<span style="color: #333333">++</span>)
+		<span style="color: #008800; font-weight: bold">for</span> (j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;</span> N; j<span style="color: #333333">++</span>)
+			B[i][j] <span style="color: #333333">=</span> A[j][i];
+}
+
+<span style="color: #333399; font-weight: bold">int</span> main()
+{
+	<span style="color: #333399; font-weight: bold">int</span> A[N][N] <span style="color: #333333">=</span> { {<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">1</span>},
+					{<span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">2</span>},
+					{<span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">3</span>},
+					{<span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">4</span>}};
+
+	<span style="color: #333399; font-weight: bold">int</span> B[N][N], i, j;
+
+	transpose(A, B);
+
+	printf(<span style="background-color: #fff0f0">&quot;Result matrix is </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+	<span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> N; i<span style="color: #333333">++</span>)
+	{
+		<span style="color: #008800; font-weight: bold">for</span> (j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;</span> N; j<span style="color: #333333">++</span>)
+		printf(<span style="background-color: #fff0f0">&quot;%d &quot;</span>, B[i][j]);
+		printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+	}
+
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>
+
+        </code>
+      </section>
+
+
+      <div class="space"></div>
+      <section class="sectionthree" id="Reverseaninputstring">
+        <h1>Reverse an input string</h1>
+        <code>
+              <div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  <span style="color: #888888">// C program to reverse a string</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+
+<span style="color: #888888">// Function to reverse any sequence</span>
+<span style="color: #888888">// starting with pointer begin and</span>
+<span style="color: #888888">// ending with pointer end</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">reverse</span>(<span style="color: #333399; font-weight: bold">char</span><span style="color: #333333">*</span> begin, <span style="color: #333399; font-weight: bold">char</span><span style="color: #333333">*</span> end)
+{
+	<span style="color: #333399; font-weight: bold">char</span> temp;
+	<span style="color: #008800; font-weight: bold">while</span> (begin <span style="color: #333333">&lt;</span> end) {
+		temp <span style="color: #333333">=</span> <span style="color: #333333">*</span>begin;
+		<span style="color: #333333">*</span>begin<span style="color: #333333">++</span> <span style="color: #333333">=</span> <span style="color: #333333">*</span>end;
+		<span style="color: #333333">*</span>end<span style="color: #333333">--</span> <span style="color: #333333">=</span> temp;
+	}
+}
+
+<span style="color: #888888">// Function to reverse words*/</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">reverseWords</span>(<span style="color: #333399; font-weight: bold">char</span><span style="color: #333333">*</span> s)
+{
+	<span style="color: #333399; font-weight: bold">char</span><span style="color: #333333">*</span> word_begin <span style="color: #333333">=</span> s;
+
+	<span style="color: #888888">// Word boundary</span>
+	<span style="color: #333399; font-weight: bold">char</span><span style="color: #333333">*</span> temp <span style="color: #333333">=</span> s;
+
+	<span style="color: #888888">// Reversing individual words as</span>
+	<span style="color: #888888">// explained in the first step</span>
+	<span style="color: #008800; font-weight: bold">while</span> (<span style="color: #333333">*</span>temp) {
+		temp<span style="color: #333333">++</span>;
+		<span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">*</span>temp <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;\0&#39;</span>) {
+			reverse(word_begin, temp <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+		}
+		<span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">*</span>temp <span style="color: #333333">==</span> <span style="color: #0044DD">&#39; &#39;</span>) {
+			reverse(word_begin, temp <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+			word_begin <span style="color: #333333">=</span> temp <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+		}
+	}
+
+	<span style="color: #888888">// Reverse the entire string</span>
+	reverse(s, temp <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+}
+
+<span style="color: #888888">// Driver Code</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+	<span style="color: #333399; font-weight: bold">char</span> s[] <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;i like this program very much&quot;</span>;
+	<span style="color: #333399; font-weight: bold">char</span><span style="color: #333333">*</span> temp <span style="color: #333333">=</span> s;
+	reverseWords(s);
+	printf(<span style="background-color: #fff0f0">&quot;%s&quot;</span>, s);
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>
+
+          </code>
+        </section>
+
+
+
+
+        <div class="space"></div>
+        <section class="sectionthree" id="BinarySearch">
+          <h1>Binary Search</h1>
+          <code>
+           <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">   <span style="color: #888888">// C program to implement recursive Binary Search</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+
+<span style="color: #888888">// A recursive binary search function. It returns</span>
+<span style="color: #888888">// location of x in given array arr[l..r] is present,</span>
+<span style="color: #888888">// otherwise -1</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">binarySearch</span>(<span style="color: #333399; font-weight: bold">int</span> arr[], <span style="color: #333399; font-weight: bold">int</span> l, <span style="color: #333399; font-weight: bold">int</span> r, <span style="color: #333399; font-weight: bold">int</span> x)
+{
+	<span style="color: #008800; font-weight: bold">if</span> (r <span style="color: #333333">&gt;=</span> l) {
+		<span style="color: #333399; font-weight: bold">int</span> mid <span style="color: #333333">=</span> l <span style="color: #333333">+</span> (r <span style="color: #333333">-</span> l) <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">2</span>;
+
+		<span style="color: #888888">// If the element is present at the middle</span>
+		<span style="color: #888888">// itself</span>
+		<span style="color: #008800; font-weight: bold">if</span> (arr[mid] <span style="color: #333333">==</span> x)
+			<span style="color: #008800; font-weight: bold">return</span> mid;
+
+		<span style="color: #888888">// If element is smaller than mid, then</span>
+		<span style="color: #888888">// it can only be present in left subarray</span>
+		<span style="color: #008800; font-weight: bold">if</span> (arr[mid] <span style="color: #333333">&gt;</span> x)
+			<span style="color: #008800; font-weight: bold">return</span> binarySearch(arr, l, mid <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>, x);
+
+		<span style="color: #888888">// Else the element can only be present</span>
+		<span style="color: #888888">// in right subarray</span>
+		<span style="color: #008800; font-weight: bold">return</span> binarySearch(arr, mid <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>, r, x);
+	}
+
+	<span style="color: #888888">// We reach here when element is not</span>
+	<span style="color: #888888">// present in array</span>
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>;
+}
+
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>(<span style="color: #333399; font-weight: bold">void</span>)
+{
+	<span style="color: #333399; font-weight: bold">int</span> arr[] <span style="color: #333333">=</span> { <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">10</span>, <span style="color: #0000DD; font-weight: bold">40</span> };
+	<span style="color: #333399; font-weight: bold">int</span> n <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">sizeof</span>(arr) <span style="color: #333333">/</span> <span style="color: #008800; font-weight: bold">sizeof</span>(arr[<span style="color: #0000DD; font-weight: bold">0</span>]);
+	<span style="color: #333399; font-weight: bold">int</span> x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">10</span>;
+	<span style="color: #333399; font-weight: bold">int</span> result <span style="color: #333333">=</span> binarySearch(arr, <span style="color: #0000DD; font-weight: bold">0</span>, n <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>, x);
+	(result <span style="color: #333333">==</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>) <span style="color: #333333">?</span> printf(<span style="background-color: #fff0f0">&quot;Element is not present in array&quot;</span>)
+				<span style="color: #333333">:</span> printf(<span style="background-color: #fff0f0">&quot;Element is present at index %d&quot;</span>,
+							result);
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>
+
+            </code>
+          </section>
+
+
+
+
+          <div class="space"></div>
+          <section class="sectionthree" id="BubbleSort">
+            <h1>Bubble Sort</h1>
+            <code>
+         <div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">   <span style="color: #888888">// C program for implementation of Bubble sort</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">swap</span>(<span style="color: #333399; font-weight: bold">int</span> <span style="color: #333333">*</span>xp, <span style="color: #333399; font-weight: bold">int</span> <span style="color: #333333">*</span>yp)
+{
+	<span style="color: #333399; font-weight: bold">int</span> temp <span style="color: #333333">=</span> <span style="color: #333333">*</span>xp;
+	<span style="color: #333333">*</span>xp <span style="color: #333333">=</span> <span style="color: #333333">*</span>yp;
+	<span style="color: #333333">*</span>yp <span style="color: #333333">=</span> temp;
+}
+
+<span style="color: #888888">// A function to implement bubble sort</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">bubbleSort</span>(<span style="color: #333399; font-weight: bold">int</span> arr[], <span style="color: #333399; font-weight: bold">int</span> n)
+{
+<span style="color: #333399; font-weight: bold">int</span> i, j;
+<span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> n<span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>; i<span style="color: #333333">++</span>)	
+
+	<span style="color: #888888">// Last i elements are already in place</span>
+	<span style="color: #008800; font-weight: bold">for</span> (j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;</span> n<span style="color: #333333">-</span>i<span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>; j<span style="color: #333333">++</span>)
+		<span style="color: #008800; font-weight: bold">if</span> (arr[j] <span style="color: #333333">&gt;</span> arr[j<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">1</span>])
+			swap(<span style="color: #333333">&amp;</span>arr[j], <span style="color: #333333">&amp;</span>arr[j<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">1</span>]);
+}
+
+<span style="color: #888888">/* Function to print an array */</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">printArray</span>(<span style="color: #333399; font-weight: bold">int</span> arr[], <span style="color: #333399; font-weight: bold">int</span> size)
+{
+	<span style="color: #333399; font-weight: bold">int</span> i;
+	<span style="color: #008800; font-weight: bold">for</span> (i<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> size; i<span style="color: #333333">++</span>)
+		printf(<span style="background-color: #fff0f0">&quot;%d &quot;</span>, arr[i]);
+	printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+}
+
+<span style="color: #888888">// Driver program to test above functions</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+	<span style="color: #333399; font-weight: bold">int</span> arr[] <span style="color: #333333">=</span> {<span style="color: #0000DD; font-weight: bold">64</span>, <span style="color: #0000DD; font-weight: bold">34</span>, <span style="color: #0000DD; font-weight: bold">25</span>, <span style="color: #0000DD; font-weight: bold">12</span>, <span style="color: #0000DD; font-weight: bold">22</span>, <span style="color: #0000DD; font-weight: bold">11</span>, <span style="color: #0000DD; font-weight: bold">90</span>};
+	<span style="color: #333399; font-weight: bold">int</span> n <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">sizeof</span>(arr)<span style="color: #333333">/</span><span style="color: #008800; font-weight: bold">sizeof</span>(arr[<span style="color: #0000DD; font-weight: bold">0</span>]);
+	bubbleSort(arr, n);
+	printf(<span style="background-color: #fff0f0">&quot;Sorted array: </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+	printArray(arr, n);
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>
+
+              </code>
+            </section>
+
+
+
+
+
+
+            <div class="space"></div>
+            <section class="sectionthree" id="Insertionsort">
+              <h1>Insertion sort</h1>
+              <code>
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #888888">// C program for insertion sort</span>
+<span style="color: #557799">#include &lt;math.h&gt;</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+
+<span style="color: #888888">/* Function to sort an array using insertion sort*/</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">insertionSort</span>(<span style="color: #333399; font-weight: bold">int</span> arr[], <span style="color: #333399; font-weight: bold">int</span> n)
+{
+	<span style="color: #333399; font-weight: bold">int</span> i, key, j;
+	<span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>; i <span style="color: #333333">&lt;</span> n; i<span style="color: #333333">++</span>) {
+		key <span style="color: #333333">=</span> arr[i];
+		j <span style="color: #333333">=</span> i <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+
+		<span style="color: #888888">/* Move elements of arr[0..i-1], that are</span>
+<span style="color: #888888">		greater than key, to one position ahead</span>
+<span style="color: #888888">		of their current position */</span>
+		<span style="color: #008800; font-weight: bold">while</span> (j <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">&amp;&amp;</span> arr[j] <span style="color: #333333">&gt;</span> key) {
+			arr[j <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>] <span style="color: #333333">=</span> arr[j];
+			j <span style="color: #333333">=</span> j <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+		}
+		arr[j <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>] <span style="color: #333333">=</span> key;
+	}
+}
+
+<span style="color: #888888">// A utility function to print an array of size n</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">printArray</span>(<span style="color: #333399; font-weight: bold">int</span> arr[], <span style="color: #333399; font-weight: bold">int</span> n)
+{
+	<span style="color: #333399; font-weight: bold">int</span> i;
+	<span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> n; i<span style="color: #333333">++</span>)
+		printf(<span style="background-color: #fff0f0">&quot;%d &quot;</span>, arr[i]);
+	printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+}
+
+<span style="color: #888888">/* Driver program to test insertion sort */</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+	<span style="color: #333399; font-weight: bold">int</span> arr[] <span style="color: #333333">=</span> { <span style="color: #0000DD; font-weight: bold">12</span>, <span style="color: #0000DD; font-weight: bold">11</span>, <span style="color: #0000DD; font-weight: bold">13</span>, <span style="color: #0000DD; font-weight: bold">5</span>, <span style="color: #0000DD; font-weight: bold">6</span> };
+	<span style="color: #333399; font-weight: bold">int</span> n <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">sizeof</span>(arr) <span style="color: #333333">/</span> <span style="color: #008800; font-weight: bold">sizeof</span>(arr[<span style="color: #0000DD; font-weight: bold">0</span>]);
+
+	insertionSort(arr, n);
+	printArray(arr, n);
+
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>
+
+                </code>
+              </section>
+
+
+
+
+
+
+              <div class="space"></div>
+              <section class="sectionthree" id="QuickSort">
+                <h1>Quick Sort</h1>
+                <code>
+                  <div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #888888">// Quick sort in C</span>
+
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+
+<span style="color: #888888">// Function to swap position of elements</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">swap</span>(<span style="color: #333399; font-weight: bold">int</span> <span style="color: #333333">*</span>a, <span style="color: #333399; font-weight: bold">int</span> <span style="color: #333333">*</span>b) {
+  <span style="color: #333399; font-weight: bold">int</span> t <span style="color: #333333">=</span> <span style="color: #333333">*</span>a;
+  <span style="color: #333333">*</span>a <span style="color: #333333">=</span> <span style="color: #333333">*</span>b;
+  <span style="color: #333333">*</span>b <span style="color: #333333">=</span> t;
+}
+
+<span style="color: #888888">// Function to partition the array on the basis of pivot element</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">partition</span>(<span style="color: #333399; font-weight: bold">int</span> array[], <span style="color: #333399; font-weight: bold">int</span> low, <span style="color: #333399; font-weight: bold">int</span> high) {
+  
+  <span style="color: #888888">// Select the pivot element</span>
+  <span style="color: #333399; font-weight: bold">int</span> pivot <span style="color: #333333">=</span> array[high];
+  <span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> (low <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+
+  <span style="color: #888888">// Put the elements smaller than pivot on the left </span>
+  <span style="color: #888888">// and greater than pivot on the right of pivot</span>
+  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> j <span style="color: #333333">=</span> low; j <span style="color: #333333">&lt;</span> high; j<span style="color: #333333">++</span>) {
+    <span style="color: #008800; font-weight: bold">if</span> (array[j] <span style="color: #333333">&lt;=</span> pivot) {
+      i<span style="color: #333333">++</span>;
+      swap(<span style="color: #333333">&amp;</span>array[i], <span style="color: #333333">&amp;</span>array[j]);
+    }
+  }
+
+  swap(<span style="color: #333333">&amp;</span>array[i <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>], <span style="color: #333333">&amp;</span>array[high]);
+  <span style="color: #008800; font-weight: bold">return</span> (i <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+}
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">quickSort</span>(<span style="color: #333399; font-weight: bold">int</span> array[], <span style="color: #333399; font-weight: bold">int</span> low, <span style="color: #333399; font-weight: bold">int</span> high) {
+  <span style="color: #008800; font-weight: bold">if</span> (low <span style="color: #333333">&lt;</span> high) {
+    
+    <span style="color: #888888">// Select pivot position and put all the elements smaller </span>
+    <span style="color: #888888">// than pivot on left and greater than pivot on right</span>
+    <span style="color: #333399; font-weight: bold">int</span> pi <span style="color: #333333">=</span> partition(array, low, high);
+    
+    <span style="color: #888888">// Sort the elements on the left of pivot</span>
+    quickSort(array, low, pi <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+    
+    <span style="color: #888888">// Sort the elements on the right of pivot</span>
+    quickSort(array, pi <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>, high);
+  }
+}
+
+<span style="color: #888888">// Function to print eklements of an array</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">printArray</span>(<span style="color: #333399; font-weight: bold">int</span> array[], <span style="color: #333399; font-weight: bold">int</span> size) {
+  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> size; <span style="color: #333333">++</span>i) {
+    printf(<span style="background-color: #fff0f0">&quot;%d  &quot;</span>, array[i]);
+  }
+  printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+}
+
+<span style="color: #888888">// Driver code</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>() {
+  <span style="color: #333399; font-weight: bold">int</span> data[] <span style="color: #333333">=</span> {<span style="color: #0000DD; font-weight: bold">8</span>, <span style="color: #0000DD; font-weight: bold">7</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">0</span>, <span style="color: #0000DD; font-weight: bold">9</span>, <span style="color: #0000DD; font-weight: bold">6</span>};
+  <span style="color: #333399; font-weight: bold">int</span> n <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">sizeof</span>(data) <span style="color: #333333">/</span> <span style="color: #008800; font-weight: bold">sizeof</span>(data[<span style="color: #0000DD; font-weight: bold">0</span>]);
+  quickSort(data, <span style="color: #0000DD; font-weight: bold">0</span>, n <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+  printf(<span style="background-color: #fff0f0">&quot;Sorted array in ascending order: </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+  printArray(data, n);
+}
+</pre></div>
+
+                  </code>
+                </section>
+
+
+
+
+
+
+
+                <div class="space"></div>
+                <section class="sectionthree" id="StackUsingArray">
+                  <h1>Stack Using Array</h1>
+                  <code>
+          <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">   <span style="color: #FF0000; background-color: #FFAAAA">#</span>include<span style="color: #333333">&lt;</span>stdio.h<span style="color: #333333">&gt;</span>
+<span style="color: #333399; font-weight: bold">int</span> stack[<span style="color: #0000DD; font-weight: bold">100</span>],choice,n,top,x,i;
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">push</span>(<span style="color: #333399; font-weight: bold">void</span>);
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">pop</span>(<span style="color: #333399; font-weight: bold">void</span>);
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">display</span>(<span style="color: #333399; font-weight: bold">void</span>);
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+    <span style="color: #888888">//clrscr();</span>
+    top<span style="color: #333333">=-</span><span style="color: #0000DD; font-weight: bold">1</span>;
+    printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> Enter the size of STACK[MAX=100]:&quot;</span>);
+    scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>n);
+    printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0"> STACK OPERATIONS USING ARRAY&quot;</span>);
+    printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0">--------------------------------&quot;</span>);
+    printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0"> 1.PUSH</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0"> 2.POP</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0"> 3.DISPLAY</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0"> 4.EXIT&quot;</span>);
+    <span style="color: #008800; font-weight: bold">do</span>
+    {
+        printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> Enter the Choice:&quot;</span>);
+        scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>choice);
+        <span style="color: #008800; font-weight: bold">switch</span>(choice)
+        {
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">1</span>:
+            {
+                push();
+                <span style="color: #008800; font-weight: bold">break</span>;
+            }
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">2</span>:
+            {
+                pop();
+                <span style="color: #008800; font-weight: bold">break</span>;
+            }
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">3</span>:
+            {
+                display();
+                <span style="color: #008800; font-weight: bold">break</span>;
+            }
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">4</span>:
+            {
+                printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0"> EXIT POINT &quot;</span>);
+                <span style="color: #008800; font-weight: bold">break</span>;
+            }
+            <span style="color: #997700; font-weight: bold">default:</span>
+            {
+                printf (<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0"> Please Enter a Valid Choice(1/2/3/4)&quot;</span>);
+            }
+                
+        }
+    }
+    <span style="color: #008800; font-weight: bold">while</span>(choice<span style="color: #333333">!=</span><span style="color: #0000DD; font-weight: bold">4</span>);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">push</span>()
+{
+    <span style="color: #008800; font-weight: bold">if</span>(top<span style="color: #333333">&gt;=</span>n<span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>)
+    {
+        printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0">STACK is over flow&quot;</span>);
+        
+    }
+    <span style="color: #008800; font-weight: bold">else</span>
+    {
+        printf(<span style="background-color: #fff0f0">&quot; Enter a value to be pushed:&quot;</span>);
+        scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>x);
+        top<span style="color: #333333">++</span>;
+        stack[top]<span style="color: #333333">=</span>x;
+    }
+}
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">pop</span>()
+{
+    <span style="color: #008800; font-weight: bold">if</span>(top<span style="color: #333333">&lt;=-</span><span style="color: #0000DD; font-weight: bold">1</span>)
+    {
+        printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0"> Stack is under flow&quot;</span>);
+    }
+    <span style="color: #008800; font-weight: bold">else</span>
+    {
+        printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\t</span><span style="background-color: #fff0f0"> The popped elements is %d&quot;</span>,stack[top]);
+        top<span style="color: #333333">--</span>;
+    }
+}
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">display</span>()
+{
+    <span style="color: #008800; font-weight: bold">if</span>(top<span style="color: #333333">&gt;=</span><span style="color: #0000DD; font-weight: bold">0</span>)
+    {
+        printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> The elements in STACK </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+        <span style="color: #008800; font-weight: bold">for</span>(i<span style="color: #333333">=</span>top; i<span style="color: #333333">&gt;=</span><span style="color: #0000DD; font-weight: bold">0</span>; i<span style="color: #333333">--</span>)
+            printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">%d&quot;</span>,stack[i]);
+        printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> Press Next Choice&quot;</span>);
+    }
+    <span style="color: #008800; font-weight: bold">else</span>
+    {
+        printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> The STACK is empty&quot;</span>);
+    }
+   
+}
+</pre></div>
+
+                    </code>
+                  </section>
+
+
+
+
+
+
+
+
+
+
+                  <div class="space"></div>
+                  <section class="sectionthree" id="QueueUsingArray">
+                    <h1>Queue Using Array</h1>
+                    <code>
+            <div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">   <span style="color: #FF0000; background-color: #FFAAAA">#</span>include<span style="color: #333333">&lt;</span>stdio.h<span style="color: #333333">&gt;</span>
+<span style="color: #557799">#define n 5</span>
+<span style="color: #333399; font-weight: bold">int</span> main()
+{
+    <span style="color: #333399; font-weight: bold">int</span> queue[n],ch<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,front<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>,rear<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>,i,j<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,x<span style="color: #333333">=</span>n;
+    printf(<span style="background-color: #fff0f0">&quot;Queue using Array&quot;</span>);
+    printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">1.Insertion </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">2.Deletion </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">3.Display </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">4.Exit&quot;</span>);
+    <span style="color: #008800; font-weight: bold">while</span>(ch)
+    {
+        printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Enter the Choice:&quot;</span>);
+        scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>ch);
+        <span style="color: #008800; font-weight: bold">switch</span>(ch)
+        {
+        <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">1</span>:
+            <span style="color: #008800; font-weight: bold">if</span>(rear<span style="color: #333333">==</span>x)
+                printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> Queue is Full&quot;</span>);
+            <span style="color: #008800; font-weight: bold">else</span>
+            {
+                printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> Enter no %d:&quot;</span>,j<span style="color: #333333">++</span>);
+                scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>queue[rear<span style="color: #333333">++</span>]);
+            }
+            <span style="color: #008800; font-weight: bold">break</span>;
+        <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">2</span>:
+            <span style="color: #008800; font-weight: bold">if</span>(front<span style="color: #333333">==</span>rear)
+            {
+                printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> Queue is empty&quot;</span>);
+            }
+            <span style="color: #008800; font-weight: bold">else</span>
+            {
+                printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> Deleted Element is %d&quot;</span>,queue[front<span style="color: #333333">++</span>]);
+                x<span style="color: #333333">++</span>;
+            }
+            <span style="color: #008800; font-weight: bold">break</span>;
+        <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">3</span>:
+            printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Queue Elements are:</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> &quot;</span>);
+            <span style="color: #008800; font-weight: bold">if</span>(front<span style="color: #333333">==</span>rear)
+                printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0"> Queue is Empty&quot;</span>);
+            <span style="color: #008800; font-weight: bold">else</span>
+            {
+                <span style="color: #008800; font-weight: bold">for</span>(i<span style="color: #333333">=</span>front; i<span style="color: #333333">&lt;</span>rear; i<span style="color: #333333">++</span>)
+                {
+                    printf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,queue[i]);
+                    printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+                }
+                <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">4</span>:
+                exit(<span style="color: #0000DD; font-weight: bold">0</span>);
+            <span style="color: #997700; font-weight: bold">default:</span>
+                printf(<span style="background-color: #fff0f0">&quot;Wrong Choice: please see the options&quot;</span>);
+            }
+        }
+    }
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>
+
+                      </code>
+                    </section>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="space"></div>
+                    <section class="sectionthree" id="StackUsingSingleLinkedList">
+                      <h1>Stack Using Single Linked List</h1>
+                      <code>
+              <div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">   <span style="color: #FF0000; background-color: #FFAAAA">#</span>include<span style="color: #333333">&lt;</span>stdio.h<span style="color: #333333">&gt;</span>
+<span style="color: #557799">#include&lt;stdlib.h&gt;</span>
+
+<span style="color: #888888">/* Structure to create a node with data and pointer */</span>
+
+<span style="color: #008800; font-weight: bold">struct</span> Node
+{
+<span style="color: #333399; font-weight: bold">int</span> data;
+<span style="color: #008800; font-weight: bold">struct</span> Node <span style="color: #333333">*</span>next;
+}<span style="color: #333333">*</span>top <span style="color: #333333">=</span> <span style="color: #007020">NULL</span>; <span style="color: #888888">// Initially the list is empty</span>
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">push</span>(<span style="color: #333399; font-weight: bold">int</span>);
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">pop</span>();
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">display</span>();
+
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+<span style="color: #333399; font-weight: bold">int</span> choice, value;
+printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">IMPLEMENTING STACKS USING LINKED LISTS</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+<span style="color: #008800; font-weight: bold">while</span>(<span style="color: #0000DD; font-weight: bold">1</span>){
+printf(<span style="background-color: #fff0f0">&quot;1. Push</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">2. Pop</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">3. Display</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">4. Exit</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Enter your choice : &quot;</span>);
+scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>choice);
+<span style="color: #008800; font-weight: bold">switch</span>(choice)
+{
+<span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">1</span>: printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Enter the value to insert: &quot;</span>);
+scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, <span style="color: #333333">&amp;</span>value);
+push(value);
+<span style="color: #008800; font-weight: bold">break</span>;
+
+<span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">2</span>: pop();
+<span style="color: #008800; font-weight: bold">break</span>;
+
+<span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">3</span>: display();
+<span style="color: #008800; font-weight: bold">break</span>;
+
+<span style="color: #008800; font-weight: bold">case</span> <span style="color: #0000DD; font-weight: bold">4</span>: exit(<span style="color: #0000DD; font-weight: bold">0</span>);
+<span style="color: #008800; font-weight: bold">break</span>;
+
+<span style="color: #997700; font-weight: bold">default:</span> printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Invalid Choice</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+}}}
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">push</span>(<span style="color: #333399; font-weight: bold">int</span> value)
+{
+<span style="color: #008800; font-weight: bold">struct</span> Node <span style="color: #333333">*</span>newNode;
+newNode <span style="color: #333333">=</span> (<span style="color: #008800; font-weight: bold">struct</span> Node<span style="color: #333333">*</span>)malloc(<span style="color: #008800; font-weight: bold">sizeof</span>(<span style="color: #008800; font-weight: bold">struct</span> Node));
+newNode<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> value; <span style="color: #888888">// get value for the node</span>
+<span style="color: #008800; font-weight: bold">if</span>(top <span style="color: #333333">==</span> <span style="color: #007020">NULL</span>)
+newNode<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> <span style="color: #007020">NULL</span>;
+<span style="color: #008800; font-weight: bold">else</span>
+newNode<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> top; <span style="color: #888888">// Make the node as TOP</span>
+top <span style="color: #333333">=</span> newNode;
+printf(<span style="background-color: #fff0f0">&quot;Node is Inserted</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>);
+}
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">pop</span>()
+{
+<span style="color: #008800; font-weight: bold">if</span>(top <span style="color: #333333">==</span> <span style="color: #007020">NULL</span>)
+printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">EMPTY STACK</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+<span style="color: #008800; font-weight: bold">else</span>{
+<span style="color: #008800; font-weight: bold">struct</span> Node <span style="color: #333333">*</span>temp <span style="color: #333333">=</span> top;
+printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Popped Element : %d&quot;</span>, temp<span style="color: #333333">-&gt;</span>data);
+printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+top <span style="color: #333333">=</span> temp<span style="color: #333333">-&gt;</span>next; <span style="color: #888888">// After popping, make the next node as TOP</span>
+free(temp);
+}}
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">display</span>()
+{
+<span style="color: #888888">// Print the stack</span>
+<span style="color: #008800; font-weight: bold">if</span>(top <span style="color: #333333">==</span> <span style="color: #007020">NULL</span>)
+printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">EMPTY STACK</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+<span style="color: #008800; font-weight: bold">else</span>
+{
+printf(<span style="background-color: #fff0f0">&quot;The stack is </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+<span style="color: #008800; font-weight: bold">struct</span> Node <span style="color: #333333">*</span>temp <span style="color: #333333">=</span> top;
+<span style="color: #008800; font-weight: bold">while</span>(temp<span style="color: #333333">-&gt;</span>next <span style="color: #333333">!=</span> <span style="color: #007020">NULL</span>){
+printf(<span style="background-color: #fff0f0">&quot;%d---&gt;&quot;</span>,temp<span style="color: #333333">-&gt;</span>data);
+temp <span style="color: #333333">=</span> temp <span style="color: #333333">-&gt;</span> next;
+}
+printf(<span style="background-color: #fff0f0">&quot;%d---&gt;NULL</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>,temp<span style="color: #333333">-&gt;</span>data);
+}}
+</pre></div>
+
+                        </code>
+                      </section>
+                      <div class="space"></div>
+                      <section class="sectionthree" id="PostfixExpressionEvaluation">
+                        <h1>Postfix Expression Evaluation</h1>
+                        <code>
+                          <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">   <span style="color: #888888">// C program to evaluate value of a postfix expression</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+<span style="color: #557799">#include &lt;string.h&gt;</span>
+<span style="color: #557799">#include &lt;ctype.h&gt;</span>
+<span style="color: #557799">#include &lt;stdlib.h&gt;</span>
+
+<span style="color: #888888">// Stack type</span>
+<span style="color: #008800; font-weight: bold">struct</span> Stack
+{
+	<span style="color: #333399; font-weight: bold">int</span> top;
+	<span style="color: #333399; font-weight: bold">unsigned</span> capacity;
+	<span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">*</span> array;
+};
+
+<span style="color: #888888">// Stack Operations</span>
+<span style="color: #008800; font-weight: bold">struct</span> Stack<span style="color: #333333">*</span> <span style="color: #0066BB; font-weight: bold">createStack</span>( <span style="color: #333399; font-weight: bold">unsigned</span> capacity )
+{
+	<span style="color: #008800; font-weight: bold">struct</span> Stack<span style="color: #333333">*</span> stack <span style="color: #333333">=</span> (<span style="color: #008800; font-weight: bold">struct</span> Stack<span style="color: #333333">*</span>) malloc(<span style="color: #008800; font-weight: bold">sizeof</span>(<span style="color: #008800; font-weight: bold">struct</span> Stack));
+
+	<span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">!</span>stack) <span style="color: #008800; font-weight: bold">return</span> <span style="color: #007020">NULL</span>;
+
+	stack<span style="color: #333333">-&gt;</span>top <span style="color: #333333">=</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>;
+	stack<span style="color: #333333">-&gt;</span>capacity <span style="color: #333333">=</span> capacity;
+	stack<span style="color: #333333">-&gt;</span>array <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">*</span>) malloc(stack<span style="color: #333333">-&gt;</span>capacity <span style="color: #333333">*</span> <span style="color: #008800; font-weight: bold">sizeof</span>(<span style="color: #333399; font-weight: bold">int</span>));
+
+	<span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">!</span>stack<span style="color: #333333">-&gt;</span>array) <span style="color: #008800; font-weight: bold">return</span> <span style="color: #007020">NULL</span>;
+
+	<span style="color: #008800; font-weight: bold">return</span> stack;
+}
+
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">isEmpty</span>(<span style="color: #008800; font-weight: bold">struct</span> Stack<span style="color: #333333">*</span> stack)
+{
+	<span style="color: #008800; font-weight: bold">return</span> stack<span style="color: #333333">-&gt;</span>top <span style="color: #333333">==</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span> ;
+}
+
+<span style="color: #333399; font-weight: bold">char</span> <span style="color: #0066BB; font-weight: bold">peek</span>(<span style="color: #008800; font-weight: bold">struct</span> Stack<span style="color: #333333">*</span> stack)
+{
+	<span style="color: #008800; font-weight: bold">return</span> stack<span style="color: #333333">-&gt;</span>array[stack<span style="color: #333333">-&gt;</span>top];
+}
+
+<span style="color: #333399; font-weight: bold">char</span> <span style="color: #0066BB; font-weight: bold">pop</span>(<span style="color: #008800; font-weight: bold">struct</span> Stack<span style="color: #333333">*</span> stack)
+{
+	<span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">!</span>isEmpty(stack))
+		<span style="color: #008800; font-weight: bold">return</span> stack<span style="color: #333333">-&gt;</span>array[stack<span style="color: #333333">-&gt;</span>top<span style="color: #333333">--</span>] ;
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0044DD">&#39;$&#39;</span>;
+}
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">push</span>(<span style="color: #008800; font-weight: bold">struct</span> Stack<span style="color: #333333">*</span> stack, <span style="color: #333399; font-weight: bold">char</span> op)
+{
+	stack<span style="color: #333333">-&gt;</span>array[<span style="color: #333333">++</span>stack<span style="color: #333333">-&gt;</span>top] <span style="color: #333333">=</span> op;
+}
+
+
+<span style="color: #888888">// The main function that returns value of a given postfix expression</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">evaluatePostfix</span>(<span style="color: #333399; font-weight: bold">char</span><span style="color: #333333">*</span> exp)
+{
+	<span style="color: #888888">// Create a stack of capacity equal to expression size</span>
+	<span style="color: #008800; font-weight: bold">struct</span> Stack<span style="color: #333333">*</span> stack <span style="color: #333333">=</span> createStack(strlen(exp));
+	<span style="color: #333399; font-weight: bold">int</span> i;
+
+	<span style="color: #888888">// See if stack was created successfully</span>
+	<span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">!</span>stack) <span style="color: #008800; font-weight: bold">return</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>;
+
+	<span style="color: #888888">// Scan all characters one by one</span>
+	<span style="color: #008800; font-weight: bold">for</span> (i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; exp[i]; <span style="color: #333333">++</span>i)
+	{
+		<span style="color: #888888">// If the scanned character is an operand (number here),</span>
+		<span style="color: #888888">// push it to the stack.</span>
+		<span style="color: #008800; font-weight: bold">if</span> (isdigit(exp[i]))
+			push(stack, exp[i] <span style="color: #333333">-</span> <span style="color: #0044DD">&#39;0&#39;</span>);
+
+		<span style="color: #888888">// If the scanned character is an operator, pop two</span>
+		<span style="color: #888888">// elements from stack apply the operator</span>
+		<span style="color: #008800; font-weight: bold">else</span>
+		{
+			<span style="color: #333399; font-weight: bold">int</span> val1 <span style="color: #333333">=</span> pop(stack);
+			<span style="color: #333399; font-weight: bold">int</span> val2 <span style="color: #333333">=</span> pop(stack);
+			<span style="color: #008800; font-weight: bold">switch</span> (exp[i])
+			{
+			<span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;+&#39;</span>: push(stack, val2 <span style="color: #333333">+</span> val1); <span style="color: #008800; font-weight: bold">break</span>;
+			<span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;-&#39;</span>: push(stack, val2 <span style="color: #333333">-</span> val1); <span style="color: #008800; font-weight: bold">break</span>;
+			<span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;*&#39;</span>: push(stack, val2 <span style="color: #333333">*</span> val1); <span style="color: #008800; font-weight: bold">break</span>;
+			<span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;/&#39;</span>: push(stack, val2<span style="color: #333333">/</span>val1); <span style="color: #008800; font-weight: bold">break</span>;
+			}
+		}
+	}
+	<span style="color: #008800; font-weight: bold">return</span> pop(stack);
+}
+
+<span style="color: #888888">// Driver program to test above functions</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+	<span style="color: #333399; font-weight: bold">char</span> exp[] <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;231*+9-&quot;</span>;
+	printf (<span style="background-color: #fff0f0">&quot;postfix evaluation: %d&quot;</span>, evaluatePostfix(exp));
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>
+
+                          </code>
+                          </section>
+  </section>
+  <footer class="red" id="services">
+    <p class="text-footer background">
+      copyright &copy; 2021 -ALL RIGHT RESERVE
+    </p>
+  </footer>
+  <!-- transition for hamburger -->
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
     }
   </script>
-
-  <div class="space">
-
-  </div>
-  <section class="sectionthree" id="MultiplicationofMatrices">
-    <h1>Multiplication of Matrices</h1>
-    <code>
- <br>#include&lt;stdio.h&gt;    
- <br>#include&lt;stdlib.h&gt;
- <br>int main(){  
- <br>int a[10][10],b[10][10],mul[10][10],r,c,i,j,k;    
- <br>system(&quot;cls&quot;);  
- <br>printf(&quot;enter the number of row=&quot;);    
- <br>scanf(&quot;%d&quot;,&amp;r);    
- <br>printf(&quot;enter the number of column=&quot;);    
- <br>scanf(&quot;%d&quot;,&amp;c);    
- <br>printf(&quot;enter the first matrix element=\n&quot;);    
- <br>for(i=0;i&lt;r;i++)    
- <br>{    
- <br>for(j=0;j&lt;c;j++)    
- <br>{    
- <br>scanf(&quot;%d&quot;,&amp;a[i][j]);    
- <br>}    
- <br>}    
- <br>printf(&quot;enter the second matrix element=\n&quot;);    
- <br>for(i=0;i&lt;r;i++)    
- <br>{    
- <br>for(j=0;j&lt;c;j++)    
- <br>{    
- <br>scanf(&quot;%d&quot;,&amp;b[i][j]);    
- <br>}    
- <br>}       
- <br>printf(&quot;multiply of the matrix=\n&quot;);    
- <br>for(i=0;i&lt;r;i++)    
- <br>{    
- <br>for(j=0;j&lt;c;j++)    
- <br>{    
- <br>mul[i][j]=0;    
- <br>for(k=0;k&lt;c;k++)    
- <br>{    
- <br>mul[i][j]+=a[i][k]*b[k][j];    
- <br>}    
- <br>}    
- <br>}    
- <br>//for printing result    
- <br>for(i=0;i&lt;r;i++)    
- <br>{    
- <br>for(j=0;j&lt;c;j++)    
- <br>{    
- <br>printf(&quot;%d\t&quot;,mul[i][j]);    
- <br>}    
- <br>printf(&quot;\n&quot;);    
- <br>}    
- <br>return 0;  
- <br>}  
- </code>
-  </section>
-</section>
-<footer class="red" id="services">
-  <p class="text-footer background">
-      copyright &copy; 2021 -ALL RIGHT RESERVE
-  </p>
-</footer>
-<!-- transition for hamburger -->
-<script>
-  function myFunction(x) {
-      x.classList.toggle("change");
-  }
-</script>
 </body>
 <script src="../script.js"></script>
+
 </html>
- 
