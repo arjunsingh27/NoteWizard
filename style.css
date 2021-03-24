@@ -14,6 +14,8 @@
 }
 html {
     scroll-behavior: smooth;
+    /* background-color: black;
+    color: white; */
   }
 /* HEADING OF THE WEBSITES */
 
@@ -126,10 +128,11 @@ nav {
 
 
 /* TURNING COLOR OF WORD IF ANY BODY HOVER  */
-
+ 
 .nav-list li a:hover {
     color: gray;
 }
+ 
 
 
 /* SETTING CONTENT OF THE WEBSITES ========SEC2 */
