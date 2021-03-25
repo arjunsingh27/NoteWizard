@@ -111,7 +111,7 @@ nav {
     font-size: 30px;
     /* font-family: 'Sacramento', cursive; */
     font-family: "Luckiest Guy", cursive;
-    color: rgb(13, 226, 245);
+    color: #f2ff00;
 }
 
 .nav-list li {
@@ -152,8 +152,8 @@ nav {
 .notes-box-main {
     padding: 0.5vh;
     height: 15cm;
-    background-image: url(img/Pencil.jpg);
-    background-color: rgb(214, 177, 30);
+    /* background-image: url(img/Pencil.jpg); */
+    background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,15 +170,16 @@ nav {
     padding: 2vh;
 }
 
-.notes-ul li a {
+/* .notes-ul li a {
+    background-color: #000000;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 254, 254);
     font-family: "Luckiest Guy", cursive;
     font-size: 3vh;
     padding: 1.2vh;
-    border: 2px solid black;
-    border-radius: 50px;
-}
+    border: 2px solid rgb(250, 1, 1);
+    border-radius: 1vh;
+} */
 
 .notes-ul li a:hover {
     color: rgb(160, 11, 11);
@@ -483,7 +484,7 @@ td {
 
 .notice-bg {
     background-image: url(img/Aanbalup.jpg);
-    background-color: #cccccc;
+    background-color: #ffffff;
     /* Used if the image is unavailable */
     background-position: center;
     /* Center the image */
@@ -637,4 +638,47 @@ border: 2px solid black;
 padding: 2.4vh;
   }
   
- 
+ button{
+     display: block;
+     
+ }
+ .button {
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.5vh;
+    padding: 2.8vh;
+    width: 35vh;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2vh;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .center{
+    display: block;
+    margin: auto;
+  }
+  
