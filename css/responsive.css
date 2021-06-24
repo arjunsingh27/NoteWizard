@@ -1,6 +1,8 @@
 @media only screen and (max-width: 955px) {
     .nav-list {
         flex-direction: column;
+        align-items:flex-start;
+
     }
     .box-main {
         flex-direction: column-reverse;
@@ -8,7 +10,7 @@
     }
     .navbar {
         flex-direction: column;
-        transition: all 0.1s linear;
+        transition: all 0.01s linear;
         height: 550px;
     }
     .burger {

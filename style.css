@@ -1,173 +1,150 @@
-/* IMPORTING THE GOOGLE FONT FROM THE NET */
-
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Sacramento&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Monoton&family=Sacramento&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-/* INTIALIZING MAGIN PADDING 0 THAT WE COULD GET ERROR FREE INVIROMENT */
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 html {
-    scroll-behavior: smooth;
-    /* background-color: black;
-    color: white; */
-  }
-/* HEADING OF THE WEBSITES */
-
-.top {
-    color: white;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    text-align: center;
-    background-color: black;
-    height: 100px;
-    cursor: pointer;
-    margin: auto;
-}
-
-
-/* CREATED A CLASS FOR RED COLOR */
-
-.red {
-    color: rgba(255, 0, 0, 0.925);
+  scroll-behavior: smooth;
 }
 
 h1 {
-    padding: 25px;
-    /* font-family: 'Luckiest Guy', cursive; */
-    font-family: "Acme", sans-serif;
-    word-spacing: 10px;
+  padding: 25px;
+  font-family: "Acme", sans-serif;
+  word-spacing: 10px;
 }
-
+h2 {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
 h3 {
-    font-size: 40px;
-    font-family: "Luckiest Guy", cursive;
-    /* -webkit-user-select: none; */
-    cursor: pointer;
+  font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+  /* -webkit-user-select: none; */
+  cursor: pointer;
 }
-
-h4 {
-    animation: blinking 5s;
-    font-size: 40px;
-    font-family: "Luckiest Guy", cursive;
-    color: rgb(252, 77, 24);
-    /* cursor: pointer; */
-    /* -webkit-user-select: none; */
-}
-
-@keyframes blinking {
-    25% {
-        color: yellow;
-    }
-    50% {
-        color: rgb(17, 17, 17);
-    }
-    0% {
-        color: red;
-    }
-    100% {
-        color: rgb(233, 8, 83);
-    }
-}
-
-
-/* SETTING NAVIGATION BAR */
 
 nav {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-
 
 /* SETTING NAVIGATION BAR */
 
 .navbar {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    cursor: pointer;
-    background-color: red;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  cursor: pointer;
+  background-color: red;
 }
-
 
 /* FORMATTING THE PAGES LINK IN NAV BAR */
 
 .nav-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    text-decoration: none;
-    font-size: 30px;
-    /* font-family: 'Sacramento', cursive; */
-    font-family: "Luckiest Guy", cursive;
-    color: #f2ff00;
+  text-decoration: none;
+  font-size: 30px;
+  /* font-family: 'Sacramento', cursive; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #f2ff00;
 }
 
 .nav-list li {
-    list-style: none;
-    padding: 26px 30px;
+  list-style: none;
+  padding: 26px 30px;
 }
 
 .nav-list li a {
-    text-decoration: none;
-    font-size: 20px;
-    /* font-family: 'Sacramento', cursive; */
-    font-family: "Luckiest Guy", cursive;
-    color: white;
+  text-decoration: none;
+  font-weight:bolder;
+  font-size: 25px;
+  color: white;
 }
-
 
 /* TURNING COLOR OF WORD IF ANY BODY HOVER  */
- 
+
 .nav-list li a:hover {
-    color: gray;
+  color: gray;
 }
- 
 
-
-/* SETTING CONTENT OF THE WEBSITES ========SEC2 */
-
-.box-main {
-    padding: 2cm;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.homesecone {
+  background-color: rgb(17, 16, 16);
+  padding: 2cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 100%;
+  margin: auto;
+  height: 15cm;
+}
+.founder {
+    background-color: rgb(27, 26, 26);
+  height: 15cm;
+}
+#creater {
+  text-align: center;
+  padding-top: 30px;
+}
+#arjunsinghimg {
+  display: block;
+  margin: auto;
+  border-radius: 150px;
+}
+.socialmedia{
+   
+    padding: 10px;
+    text-align: center;
+    
+    
+    
+}
+.socialmedia a{
+    text-decoration: none;
     color: white;
-    max-width: 100%;
+    font-size: 30px;
     margin: auto;
-    height: 15cm;
+}
+.box-main {
+  padding: 2cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 100%;
+  margin: auto;
+  height: 15cm;
 }
 
 .notes-box-main {
-    padding: 0.5vh;
-    height: 15cm;
-    /* background-image: url(img/Pencil.jpg); */
-    background-color: rgb(255, 255, 255);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* -webkit-transform: scaleX(-1); */
+  padding: 0.5vh;
+  height: 15cm;
+  /* background-image: url(img/Pencil.jpg); */
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* -webkit-transform: scaleX(-1); */
 }
 
 .notes-ul li {
-    list-style: none;
-    padding: 2.5vh;
+  list-style: none;
+  padding: 2.5vh;
 }
 
 .notes-sem {
-    text-align: center;
-    padding: 2vh;
+  text-align: center;
+  padding: 2vh;
 }
 
 /* .notes-ul li a {
@@ -182,70 +159,59 @@ nav {
 } */
 
 .notes-ul li a:hover {
-    color: rgb(160, 11, 11);
+  color: rgb(160, 11, 11);
 }
-
 
 /* LEFT PART OF THE BOX-MAIN IN SEC2 */
 
 .left-part {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
 }
 
-
-/* FORMATING FONT OF SEC2 LEFT-SIDE PARAGRAPH */
-
-#first-p {
-    font-size: 30px;
-    font-family: "Luckiest Guy", cursive;
-    /* -webkit-user-select: none; */
-    color: rgb(34, 34, 32);
+#intro {
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
 }
-
-
-/* EDITING IMAGE IN BOX MAIN */
 
 .img {
-    max-width: 200px;
-    border: 4px solid white;
-    border-radius: 150px;
-    display: block;
-    margin: auto;
+  max-width: 200px;
+  border: 4px solid white;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
 }
-
 
 /* setting back ground  */
 
 .background {
-    background: rgba(0, 0, 0, 7);
-    /* background-image: url("https://arjunsingh27.github.io/e-learning.github.io/img/bg1.jpg") cover center ; */
-    background-size: cover;
-    background-blend-mode: lighten;
+  background: rgba(0, 0, 0, 7);
+  /* background-image: url("https://arjunsingh27.github.io/e-learning.github.io/img/bg1.jpg") cover center ; */
+  background-size: cover;
+  background-blend-mode: lighten;
 }
-
 
 /* footer formatting */
 
 .text-footer {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
+  color: #f2f2f2;
 }
-
 
 /* setting hamburger */
 
 .burger {
-    display: none;
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 20px;
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 20px;
 }
-
 
 /* .line {
   width: 60px;
@@ -254,138 +220,112 @@ nav {
   margin: 4px 4px;
 } */
 
-
 /* lines of ham burger */
 
 .bar1,
 .bar2,
 .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(36, 34, 34);
-    margin: 6px 0;
-    transition: 0.4s;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(36, 34, 34);
+  margin: 6px 0;
+  transition: 0.4s;
 }
-
 
 /* transition in hamburger */
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
-
 
 /* rotaing of hamburger lines */
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
-
-/* .img-notice img{
-width: 250px;
-height: 100px;
-border-radius: 0;
-margin-bottom: 30px;
-} */
-
-
-/* setting background color of section */
-
-.sec1 {
-    background-color: gray;
-}
-
-.covid {
-    background-image: url(img/Aanbalup.jpg);
-    background-color: #cccccc;
-    /* Used if the image is unavailable */
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
+.header {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: black;
+  height: 100px;
+  cursor: pointer;
+  margin: auto;
 }
 
 .bg {
-    background-image: url(img/sunset.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url(img/sunset.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
-.sec2 {
-    background-color: rgb(119, 148, 153);
-}
-
 
 /* clock  */
 
 #clockcontainer {
-    position: relative;
-    margin: auto;
-    height: 20vw;
-    width: 20vw;
-    /* background-image: url(img/Book.jpg); */
-    background: url(img/clock4.png);
-    /* background: url(/img/clock3.mp4); */
-    background-size: 100%;
-    border-radius: 50%;
-    /* background-color:rgb(250, 33, 4); */
+  position: relative;
+  margin: auto;
+  height: 20vw;
+  width: 20vw;
+  /* background-image: url(img/Book.jpg); */
+  background: url(img/clock4.png);
+  /* background: url(/img/clock3.mp4); */
+  background-size: 100%;
+  border-radius: 50%;
+  /* background-color:rgb(250, 33, 4); */
 }
 
 #hour,
 #minute,
 #second {
-    position: absolute;
-    background: rgb(10, 1, 1);
-    border-radius: 2px;
-    transform-origin: bottom;
+  position: absolute;
+  background: rgb(10, 1, 1);
+  border-radius: 2px;
+  transform-origin: bottom;
 }
 
 #hour {
-    width: 1.8%;
-    height: 20%;
-    top: 30%;
-    left: 49.2%;
-    opacity: 0.8;
+  width: 1.8%;
+  height: 20%;
+  top: 30%;
+  left: 49.2%;
+  opacity: 0.8;
 }
 
 #minute {
-    width: 1.1%;
-    height: 26%;
-    top: 24%;
-    left: 49.4%;
-    opacity: 0.8;
+  width: 1.1%;
+  height: 26%;
+  top: 24%;
+  left: 49.4%;
+  opacity: 0.8;
 }
 
 #second {
-    width: 1%;
-    height: 32%;
-    top: 18%;
-    left: 49.4%;
-    opacity: 0.8;
+  width: 1%;
+  height: 32%;
+  top: 18%;
+  left: 49.4%;
+  opacity: 0.8;
 }
-
 
 /* fourth semeseter table */
 
 .bggray {
-    background-color: rgba(12, 228, 243, 0.137);
+  background-color: rgba(12, 228, 243, 0.137);
 }
 
 .thbold {
-    font-size: 3.5vh;
-    text-align: center;
+  font-size: 3.5vh;
+  text-align: center;
 }
-
 
 /* .fourth-bg {
   background: url(img/paper.jpg);
@@ -395,49 +335,49 @@ margin-bottom: 30px;
 } */
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .s-width {
-    width: 20%;
+  width: 20%;
 }
 
 .n-width {
-    width:60%
+  width: 60%;
 }
 
 table,
 th,
 td {
-    border: 1px solid rgba(15, 218, 245, 0.884);
-    border-collapse: collapse;
-    /* font-family: "Luckiest Guy", cursive; */
-    padding: 0.3vh;
-    /* -webkit-user-select: none; */
-    color: rgb(37, 36, 35);
-    height: 5vh;
-    text-align: left;
+  border: 1px solid rgba(15, 218, 245, 0.884);
+  border-collapse: collapse;
+  /* font-family: "Luckiest Guy", cursive; */
+  padding: 0.3vh;
+  /* -webkit-user-select: none; */
+  color: rgb(37, 36, 35);
+  height: 5vh;
+  text-align: left;
 }
- 
+
 .fouth-notes {
-    padding: 0.5vh;
-    /* height: 20cm; */
+  padding: 0.5vh;
+  /* height: 20cm; */
 }
 
 #fourthsemester {
-    text-align: center;
-    padding: 2vh;
+  text-align: center;
+  padding: 2vh;
 }
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 .table-title {
-    display: block;
-    font-size: 3.5vh;
-    font-family: "Luckiest Guy", cursive;
-    padding: 3vh;
-    color: #007bff;
-    cursor: pointer;
+  display: block;
+  font-size: 3.5vh;
+  font-family: "Luckiest Guy", cursive;
+  padding: 3vh;
+  color: #007bff;
+  cursor: pointer;
 }
 
 /* .table-title:hover {
@@ -445,26 +385,26 @@ td {
 } */
 
 .btn {
-    display: inline-block;
-    color: rgb(5, 5, 5);
-    font-family: 'Roboto', sans-serif;
-    background-color: #4CAF50;
-    margin: .5vh;
-    padding: .5vh;
-    border-radius: 150px;
-    outline: none;
-    width: 90%;
-    box-shadow: 0 0.5vh #999;
-    cursor: pointer;
+  display: inline-block;
+  color: rgb(5, 5, 5);
+  font-family: "Roboto", sans-serif;
+  background-color: #4caf50;
+  margin: 0.5vh;
+  padding: 0.5vh;
+  border-radius: 150px;
+  outline: none;
+  width: 90%;
+  box-shadow: 0 0.5vh #999;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #007bff;
-    color: rgb(255, 255, 255);
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
 }
 
 .btn:active {
-    transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 /* table tbody tr td a {
@@ -479,206 +419,196 @@ td {
     color: rgb(141, 137, 137);
 } */
 
-
 /* notice */
 
 .notice-bg {
-    background-image: url(img/Aanbalup.jpg);
-    background-color: #ffffff;
-    /* Used if the image is unavailable */
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
+  background-image: url(img/Aanbalup.jpg);
+  background-color: #ffffff;
+  /* Used if the image is unavailable */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
 }
-
 
 /* time table */
 
 .time-table-box-main {
-    margin: 10px;
-    background-color: white;
+  margin: 10px;
+  background-color: white;
 }
 
 iframe {
-    height: 90vh;
-    width: 100%;
+  height: 90vh;
+  width: 100%;
 }
 
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
-  
-  /* Style the label to display next to the inputs */
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  /* Style the submit button */
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  /* Style the container */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  /* Floating column for labels: 25% width */
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  /* Floating column for inputs: 75% width */
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  * {
-    box-sizing: border-box;
-  }
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
 
-  .space {
-    height: 500px;
-  }
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
 
-  .one {
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
 
-    padding: 2cm;
-    border: 2px solid black;
-    border-spacing: 2cm;
-  }
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
-  h1 {
-    text-align: center;
-  }
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
 
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
 
-  #myInput {
-    background-image: url(/img/search.png);
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    width: 100%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
 
-  }
+.space {
+  height: 500px;
+}
 
-  #myTable {
-    
-    border-collapse: collapse;
-    width: 100%;
-    border: 1px solid rgb(22, 22, 22);
-    font-family: 'Roboto', sans-serif;
-    
-  }
+.one {
+  padding: 2cm;
+  border: 2px solid black;
+  border-spacing: 2cm;
+}
 
-  #myTable th,
-  #myTable td {
-    text-align: left;
-    border-color: black;
-    font-size: 2.5vh;
-  }
+h1 {
+  text-align: center;
+}
 
-  #myTable tr {
-    border-bottom: 1px solid #ddd;
-     
-  }
- .view-code{
-     text-align: center;
- }
-  #myTable tr.header,
-  #myTable tr:hover {
-    background-color: #f1f1f1;
-  }
+#myInput {
+  background-image: url(/img/search.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
 
-  td a {
-    text-decoration: none;
-  
-  }
-  
-  #solution{
-    text-align: center;
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgb(22, 22, 22);
+  font-family: "Roboto", sans-serif;
+}
 
-  }
-  .sectiontwo{
-    padding: 5vh;
-  }
-  .sectionthree{
-border: 2px solid black;
-padding: 2.4vh;
-  }
-  
- button{
-     display: block;
-     
- }
- .button {
-    border-radius: 4px;
-    background-color: #4CAF50;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 2.5vh;
-    padding: 2.8vh;
-    width: 35vh;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 2vh;
-  }
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  .center{
-    display: block;
-    margin: auto;
-  }
-  
+#myTable th,
+#myTable td {
+  text-align: left;
+  border-color: black;
+  font-size: 2.5vh;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+.view-code {
+  text-align: center;
+}
+#myTable tr.header,
+#myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+td a {
+  text-decoration: none;
+}
+
+#solution {
+  text-align: center;
+}
+.sectiontwo {
+  padding: 5vh;
+}
+.sectionthree {
+  border: 2px solid black;
+  padding: 2.4vh;
+}
+
+button {
+  display: block;
+}
+.button {
+  border-radius: 4px;
+  background-color: #4caf50;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5vh;
+  padding: 2.8vh;
+  width: 35vh;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2vh;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.center {
+  display: block;
+  margin: auto;
+}

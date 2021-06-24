@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <title>DCS COMPUTER SCIENCE</title>
-</head>
+    <title>COMPUTER SCIENCE | HOME</title>
+  </head>
 
-<body>
+  <body>
     <!-- HEADING OF THE WEBSITE -->
-    <section class="sec1">
-        <div class="top">
-            <h1 class="head">
-                DIPLOMA IN COMPUTER <strong class="red">SCIENCE</strong>
-            </h1>
-        </div>
-    </section>
+    <header class="header">
+      <style>
+        strong {
+          color: red;
+        }
+      </style>
+      <h1>DIPLOMA IN COMPUTER <strong>SCIENCE</strong></h1>
+    </header>
     <!-- NAVIGATION BAR  FOR THE WEBSITES -->
     <nav class="navbar h-nav-resp" id="home">
-        <ul class="nav-list v-class-resp">
-            <div class="logo">NAVBAR</div>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="html/Notice.html">Notice</a></li>
-            <li><a href="html/notes.html">Notes</a></li>
-            <li><a href="html/timetable.html">TimeTable</a></li>
-            <li><a href="html/about.html">About</a></li>
-            <li>
-                <a href="html/contactus.html">CONTACT US</a>
-            </li>
-        </ul>
-        <!-- BUILDING OF HAMBURGER -->
-        <div class="burger" onclick="myFunction(this)">
-            <div class="line bar1"></div>
-            <div class="line bar2"></div>
-            <div class="line bar3"></div>
-        </div>
+      <ul class="nav-list v-class-resp">
+        <div class="logo">NAVBAR</div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/notes.html">Notes</a></li>
+        <li><a href="html/timetable.html">TimeTable</a></li>
+        <li><a href="html/about.html">About</a></li>
+        <li><a href="html/contactus.html">Contact Us</a></li>
+      </ul>
+      <!-- BUILDING OF HAMBURGER -->
+      <div class="burger" onclick="myFunction(this)">
+        <div class="line bar1"></div>
+        <div class="line bar2"></div>
+        <div class="line bar3"></div>
+      </div>
     </nav>
     <!-- CONTENT OF THE WEB SITE -->
-    <section class="sec2 covid">
-        <div class="box-main">
-            <div class="left-part">
-                <h3>Hii!</h3>
-                <p id="first-p">
-                    This Is an official website Made for helping the student of all semester to get their notes previous year question paper and much more use full item.
-                </p>
-            </div>
-            <div class="right-part">
-                <img class="img" src="img/cs.png" alt="img" />
-            </div>
-        </div>
+    <section class="homesecone">
+      <div class="left-part">
+        <h2>Hii!</h2>
+        <p id="intro">
+          This Is an official website Made for helping the student of all
+          semester to get their notes previous year question paper and much more
+          use full item.
+        </p>
+      </div>
+      <div class="right-part">
+        <img class="img" src="img/cs.png" alt="img" />
+      </div>
+    </section>
+    <section class="founder">
+      <h2 id="creater">Creater</h2>
+      <img id="arjunsinghimg" src="img/ArjunSingh.jpg" alt="" height="400px" />
+      <div class="socialmedia">
+    <a href="https://www.youtube.com/channel/UC5KgT3y1u1BojUXn92pToww" target="_blank"><img src="img/youtube.png" alt="Youtube" height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.instagram.com/chaudhary____arjun/" target="_blank"><img src="img/insta.png" alt="Instagram" height="35px" width="35px"></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/arjunsingh27" target="_blank"><img src="img/github.png" alt="github" height="40px" width="40px"></a>
+   
+    </div>
     </section>
     <!-- footer -->
-    <footer class="red" id="services">
-        <p class="text-footer background">
-            copyright &copy; 2021 -ALL RIGHT RESERVE
-        </p>
+    <footer>
+      <p class="text-footer background">
+        copyright &copy; 2021 -ALL RIGHT RESERVE
+      </p>
     </footer>
     <!-- transition for hamburger -->
     <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
     </script>
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="script.js"></script>
 </html>
