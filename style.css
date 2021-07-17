@@ -171,9 +171,16 @@ nav {
   justify-content: center;
   color: black;
 }
+.right-part{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
 
 #intro {
-  font-size: 20px;
+  font-size: 100%;
   color: white;
   font-family: sans-serif;
 }
