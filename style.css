@@ -78,8 +78,8 @@ nav {
 }
 
 .homesecone {
+  padding: 0px;
   background-color: rgb(17, 16, 16);
-  padding: 2cm;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +147,7 @@ nav {
   padding: 2vh;
 }
 
-/* .notes-ul li a {
+.notes-ul li a {
     background-color: #000000;
     text-decoration: none;
     color: rgb(255, 254, 254);
@@ -156,7 +156,7 @@ nav {
     padding: 1.2vh;
     border: 2px solid rgb(250, 1, 1);
     border-radius: 1vh;
-} */
+}
 
 .notes-ul li a:hover {
   color: rgb(160, 11, 11);
