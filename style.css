@@ -19,7 +19,7 @@ h2 {
 }
 h3 {
   font-size: 40px;
-  font-family: "Luckiest Guy", cursive;
+  
   /* -webkit-user-select: none; */
   cursor: pointer;
 }
@@ -115,36 +115,18 @@ nav {
     font-size: 30px;
     margin: auto;
 }
-.box-main {
-  padding: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  max-width: 100%;
-  margin: auto;
+.notes_sectionone{
+  background-color: rgb(27, 25, 25);
   height: 15cm;
 }
-
-.notes-box-main {
-  padding: 0.5vh;
-  height: 15cm;
-  /* background-image: url(img/Pencil.jpg); */
-  background-color: rgb(255, 255, 255);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* -webkit-transform: scaleX(-1); */
+#notes_heading{
+color: #ddd;
+text-align: center;
+padding: 20px;
 }
-
 .notes-ul li {
   list-style: none;
   padding: 2.5vh;
-}
-
-.notes-sem {
-  text-align: center;
-  padding: 2vh;
 }
 
 .notes-ul li a {
@@ -158,9 +140,9 @@ nav {
     border-radius: 1vh;
 }
 
-.notes-ul li a:hover {
+/* .notes-ul li a:hover {
   color: rgb(160, 11, 11);
-}
+} */
 
 /* LEFT PART OF THE BOX-MAIN IN SEC2 */
 
@@ -388,7 +370,7 @@ td {
   display: inline-block;
   color: rgb(5, 5, 5);
   font-family: "Roboto", sans-serif;
-  background-color: #4caf50;
+  background-color: #3c8d3c;
   margin: 0.5vh;
   padding: 0.5vh;
   border-radius: 150px;
@@ -421,18 +403,7 @@ td {
 
 /* notice */
 
-.notice-bg {
-  background-image: url(img/Aanbalup.jpg);
-  background-color: #ffffff;
-  /* Used if the image is unavailable */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
-}
-
+ 
 /* time table */
 
 .time-table-box-main {
@@ -575,7 +546,7 @@ button {
 }
 .button {
   border-radius: 4px;
-  background-color: #4caf50;
+  background-color: #414241;
   border: none;
   color: #ffffff;
   text-align: center;
