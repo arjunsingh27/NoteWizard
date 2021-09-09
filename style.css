@@ -8,7 +8,7 @@ html {
 }
 
 h1 {
-  padding: 25px;
+  padding: 50px;
   font-family: "Acme", sans-serif;
   word-spacing: 10px;
 }
@@ -19,7 +19,7 @@ h2 {
 }
 h3 {
   font-size: 40px;
-  
+
   /* -webkit-user-select: none; */
   cursor: pointer;
 }
@@ -88,7 +88,7 @@ nav {
   margin: auto;
   height: 15cm;
 }
-.founder {
+/* .founder {
     background-color: rgb(27, 26, 26);
   height: 15cm;
 }
@@ -102,19 +102,19 @@ nav {
   border-radius: 150px;
 }
 .socialmedia{
-   
+
     padding: 10px;
     text-align: center;
-    
-    
-    
+
+
+
 }
 .socialmedia a{
     text-decoration: none;
     color: white;
     font-size: 30px;
     margin: auto;
-}
+} */
 .notes_sectionone{
   background-color: rgb(27, 25, 25);
   height: 15cm;
@@ -403,7 +403,7 @@ td {
 
 /* notice */
 
- 
+
 /* time table */
 
 .time-table-box-main {
