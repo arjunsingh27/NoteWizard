@@ -1,3 +1,4 @@
+![Note Wizard Banner](https://github.com/arjunsingh27/NoteWizard/blob/main/NoteWizard.jpg)
 # NoteWizard
 
 Welcome to NoteWizard! This web application is designed to help students stay organized and informed by providing features such as college notes, syllabus tracking, timetables, and important event notifications.
